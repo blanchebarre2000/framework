@@ -1,0 +1,25 @@
+/* u can choose your COLORS */
+
+.primaryColor {
+color: rgb(255, 112, 44);
+}
+
+.secondaryColor {
+  color: rgb(255, 151, 102);
+}
+
+.thirdColor {
+  color: rgb(255, 187, 155);
+}
+
+.blackColor {
+  color: rgb();
+}
+
+.whiteColor {
+  color: rgb();
+}
+
+.greyColor {
+  color: rgb();
+}
