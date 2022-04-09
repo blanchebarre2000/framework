@@ -7,15 +7,13 @@
   <p class="primaryColor">test</p>
 
 
-
+<form>
   <div>
     <label for="nom">Quel est votre nom ?</label>
     <input type="text" id="nom">
   </div>
-
   <div>
     <label for="nom">Titre</label>
-
     <select name="nom" id="select">
       <option value="">Choisissez "nom"</option>
       <option value="nom1">Nom1</option>
@@ -31,7 +29,36 @@
     <input type="number" id="tentacles" name="tentacles"
          min="10" max="100">
   </div>
+  <div class="motDePasse">
+    <p>
+      <label for="pseudo">Votre pseudo :</label>
+      <input type="text" name="pseudo" id="pseudo" />
+      
+      <br />
+      <label for="pass">Votre mot de passe :</label>
+      <input type="password" name="pass" id="pass" />
+    </p>
+  </div>
+  <div>
+      <p>
+          <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
+          <textarea name="ameliorer" id="ameliorer"></textarea>
+      </p>
+  </div>
+  <input type="email" />
+  <input type="tel" />
+  <input type="url" />
+  <input type="range" />
+  <input type="date" />
+  <p>
+    Cochez le choix que voix souhaitez :<br />
+    <input type="checkbox" name="choix1" id="choix1" /> <label for="choix1">choix1</label><br />
+    <input type="checkbox" name="choix2" id="choix2" /> <label for="choix2">choix2</label><br />
+    <input type="checkbox" name="choix3" id="choix3" /> <label for="choix3">choix3</label><br />
+    <input type="checkbox" name="choix4" id="choix4" /> <label for="choix4">choix4</label>
+  </p>
   
+</form>
   
   
 </body>
