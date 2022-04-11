@@ -1,4 +1,24 @@
+label {
+    color: ;
+    font-size: 16px;
+    font-style: normal;
+    font-family: ;
+    letter-spacing: normal;
+}
+
 input {
+    height: 48px;
+    background-color: ;
+    border-color: ;
+    color: ;
+    font-size: 16px;
+    font-style: normal;
+    font-family: ;
+    letter-spacing: normal;
+    border-radius: 8px;
+}
+
+.selecteur {
     height: 48px;
     background-color: ;
     border-color: ;

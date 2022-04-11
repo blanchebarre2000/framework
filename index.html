@@ -9,19 +9,19 @@
 
 <form>
   <div>
-    <label for="nom">Quel est votre nom ?</label>
-    <input type="text" id="nom">
+    <label for="name">what's your name ?</label>
+    <input type="text" id="name">
   </div>
-  <div>
-    <label for="nom">Titre</label>
-    <select name="nom" id="select">
-      <option value="">Choisissez "nom"</option>
-      <option value="nom1">Nom1</option>
-      <option value="nom2">Nom2</option>
-      <option value="nom3">Nom3</option>
-      <option value="nom4">Nom4</option>
-      <option value="nom5">Nom5</option>
-      <option value="nom6">Nom6</option>
+  <div class="selecteur">
+    <label for="name">Titre</label>
+    <select name="name" id="select">
+      <option value="">Choisissez "name"</option>
+      <option value="name1">Name1</option>
+      <option value="name2">Name2</option>
+      <option value="name3">Name3</option>
+      <option value="name4">Name4</option>
+      <option value="name5">Name5</option>
+      <option value="name6">Name6</option>
     </select>
   </div>
   <div>
@@ -29,33 +29,30 @@
     <input type="number" id="tentacles" name="tentacles"
          min="10" max="100">
   </div>
-  <div class="motDePasse">
+  <div class="password">
     <p>
-      <label for="pseudo">Votre pseudo :</label>
-      <input type="text" name="pseudo" id="pseudo" />
+      <label for="nickname">Your nickname :</label>
+      <input type="text" name="nickname" id="nickname" />
       
       <br />
-      <label for="pass">Votre mot de passe :</label>
-      <input type="password" name="pass" id="pass" />
+      <label for="password">Your password :</label>
+      <input type="password" name="password" id="password" />
     </p>
   </div>
   <div>
       <p>
-          <label for="ameliorer">Comment pensez-vous que je pourrais améliorer mon site ?</label><br />
-          <textarea name="ameliorer" id="ameliorer"></textarea>
+          <label for="improve">Develop a text :</label><br />
+          <textarea name="improve" id="improve"></textarea>
       </p>
   </div>
-  <input type="email" />
-  <input type="tel" />
-  <input type="url" />
-  <input type="range" />
-  <input type="date" />
+  <input class="range" type="range" />
+  <input class="calendar" type="date" />
   <p>
-    Cochez le choix que voix souhaitez :<br />
-    <input type="checkbox" name="choix1" id="choix1" /> <label for="choix1">choix1</label><br />
-    <input type="checkbox" name="choix2" id="choix2" /> <label for="choix2">choix2</label><br />
-    <input type="checkbox" name="choix3" id="choix3" /> <label for="choix3">choix3</label><br />
-    <input type="checkbox" name="choix4" id="choix4" /> <label for="choix4">choix4</label>
+    Check the choice you want :<br />
+    <input type="checkbox" name="choice1" id="choice1" /> <label for="choice1">choice1</label><br />
+    <input type="checkbox" name="choice2" id="choice2" /> <label for="choice2">choice2</label><br />
+    <input type="checkbox" name="choice3" id="choice3" /> <label for="choice3">choice3</label><br />
+    <input type="checkbox" name="choice4" id="choice4" /> <label for="choice4">choice4</label>
   </p>
   
 </form>
