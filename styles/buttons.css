@@ -1,3 +1,126 @@
+a {
+    text-decoration: none;
+    font-weight: 500;
+}
+
+
+
+.primary--link {
+    color: rgba(var(--primaryColor), 1);
+}
+
+.primary--link:hover {
+    background-color: rgba(var(--primaryColor), .75);
+}
+
+.big--link {
+    font-size: calc(var(--baseUnit) * 1.25);
+}
+
+.small--link {
+    font-size: calc(var(--baseUnit) * .75);
+}
+
+
+
+
+
+button {
+    margin: 0.5rem;
+    padding: .75rem 1rem .75rem 1rem;
+    border: none;
+    border-radius: 5rem;
+}
+
+
+
+.primary--button {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(var(--primaryColor), 1);
+}
+
+.primary--button a {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+.primary--button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(var(--primaryColorDarker), 1);
+}
+
+.primary--button:hover a {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+
+.secondary--button {
+    color: rgba(var(--primaryColor), 1);
+    background-color: rgba(var(--primaryColor), .15);
+}
+
+.secondary--button a {
+    color: rgba(var(--primaryColor), 1);
+}
+
+
+.secondary--button:hover {
+    color: rgba(255, 255, 255, 1);
+    background-color: rgba(var(--primaryColor), .55);
+}
+
+.secondary--button:hover a  {
+    color: rgba(255, 255, 255, 1);
+}
+
+
+
+.third--button {
+    color: rgba(var(--primaryColor), .75);
+    background-color: rgba(255, 255, 255, 1);
+    border: 2px solid rgba(var(--primaryColor), .25);
+}
+
+.third--button a {
+    color: rgba(var(--primaryColor), .75);
+}
+
+
+.third--button:hover {
+    color: rgba(var(--primaryColor), 1);
+    border: 2px solid rgba(var(--primaryColor), .75);
+}
+
+third--button:hover a {
+    color: rgba(var(--primaryColor), 1);
+}
+
+
+
+
+
+.big--button {
+}
+
+.medium--button {
+    margin: 0.5rem;
+    padding: .55rem .85rem .55rem .85rem;
+    border-radius: 5rem;
+}
+
+
+.small--button {
+    font-size: .75rem;
+    margin: 0.5rem;
+    padding: .4rem .7rem .4rem .7rem;
+    border-radius: 5rem;
+}
+
+
+
 /* Crédits :
-            Bryan -> Noms des classes
+            Baptiste L -> Style des boutons
+            Bryan V -> Noms des classes
 */
