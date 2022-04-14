@@ -1,0 +1,11 @@
+:root {
+  --baseUnit: 16px;
+  --grid-maxWidth: 120rem;
+  --grid-gutter: 2rem;
+  --primaryColor: rgb(255, 112, 44);
+  --secondaryColor: rgb(255, 151, 102);
+  --thirdColor: rgb(255, 187, 155);
+  --blackColor: rgb(37, 12, 0);
+  --whiteColor: rgb(255, 249, 247);
+  --greyColor: rgb(231, 223, 221);
+}
