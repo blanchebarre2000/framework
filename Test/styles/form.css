@@ -15,7 +15,7 @@ textarea[type="text"] {
   font-family: inherit;
   padding: 0.8rem 1rem;
   border-radius: 4px;
-  border: 1px solid var(--color-lightGrey);
+  border: 1px solid var(--neutralColorLighter);
   font-size: 1em;
   transition: all 0.2s ease;
   display: block;
@@ -26,7 +26,7 @@ input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type=
 select:hover,
 textarea:hover,
 textarea[type="text"]:hover {
-  border-color: var(--color-grey);
+  border-color: var(--neutralColor);
 }
 
 input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):focus,
@@ -69,8 +69,8 @@ select {
 [type="submit"],
 button {
   padding: 1rem 2.5rem;
-  color: var(--color-darkGrey);
-  background: var(--color-lightGrey);
+  color: var(--neutralColorDarker);
+  background: var(--neutralColorLighter);
   border-radius: 4px;
   border: 1px solid transparent;
   font-size: var(--font-size);
@@ -145,11 +145,11 @@ button:disabled:hover {
 }
 
 .button.secondary {
-  background-color: var(--color-grey);
+  background-color: var(--neutralColor);
 }
 
 .button.dark {
-  background-color: var(--color-darkGrey);
+  background-color: var(--neutralColorDarker);
 }
 
 .button.error {
@@ -162,7 +162,7 @@ button:disabled:hover {
 
 .button.outline {
   background-color: transparent;
-  border-color: var(--color-lightGrey);
+  border-color: var(--neutralColorLighter);
 }
 
 .button.outline.primary {
@@ -171,13 +171,13 @@ button:disabled:hover {
 }
 
 .button.outline.secondary {
-  border-color: var(--color-grey);
-  color: var(--color-grey);
+  border-color: var(--neutralColor);
+  color: var(--neutralColor);
 }
 
 .button.outline.dark {
-  border-color: var(--color-darkGrey);
-  color: var(--color-darkGrey);
+  border-color: var(--neutralColorDarker);
+  color: var(--neutralColorDarker);
 }
 
 .button.clear {

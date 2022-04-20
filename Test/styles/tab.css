@@ -10,8 +10,8 @@
 .tabs > a {
     padding: 1rem 2rem;
     flex: 0 1 auto;
-    color: var(--color-darkGrey);
-    border-bottom: 2px solid var(--color-lightGrey);
+    color: var(--neutralColorDarker);
+    border-bottom: 2px solid var(--neutralColorLighter);
     text-align: center;
 }
 
@@ -19,7 +19,7 @@
 .tabs > a.active,
 .tabs > a:hover {
     opacity: 1;
-    border-bottom: 2px solid var(--color-darkGrey);
+    border-bottom: 2px solid var(--neutralColorDarker);
 }
 
 .tabs > a[aria-current="page"],
