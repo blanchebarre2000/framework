@@ -1,3 +1,16 @@
+/*
+a {
+    text-decoration: none;
+    color: rgba(var(--neutralColor), 1);
+    font-size: var(--baseUnit);
+}
+
+a:hover {
+    background-color: rgba(var(--neutralColor), .75);
+    color: white;
+}
+*/
+
 a {
     text-decoration: none;
     font-weight: 500;
@@ -36,7 +49,7 @@ button {
 
 .primary--button {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(var(--primaryColor), 1);
+    background-color: var(--primaryColor);
 }
 
 .primary--button a {
@@ -46,7 +59,7 @@ button {
 
 .primary--button:hover {
     color: rgba(255, 255, 255, 1);
-    background-color: rgba(var(--primaryColorDarker), 1);
+    background-color: var(--primaryColorDarker);
 }
 
 .primary--button:hover a {
@@ -57,18 +70,18 @@ button {
 
 
 .secondary--button {
-    color: rgba(var(--primaryColor), 1);
-    background-color: rgba(var(--primaryColor), .15);
+    color: var(--primaryColor);
+    background-color: var(--secondaryColorLighter);
 }
 
 .secondary--button a {
-    color: rgba(var(--primaryColor), 1);
+    color: var(--primaryColor);
 }
 
 
 .secondary--button:hover {
-    color: rgba(255, 255, 255, 1);
-    background-color: rgba(var(--primaryColor), .55);
+    color: var(--primaryColor_1);
+    background-color: var(--primaryColor);
 }
 
 .secondary--button:hover a  {
@@ -78,23 +91,23 @@ button {
 
 
 .third--button {
-    color: rgba(var(--primaryColor), .75);
-    background-color: rgba(255, 255, 255, 1);
-    border: 2px solid rgba(var(--primaryColor), .25);
+    color: var(--primaryColor);
+    background-color: var(--color-lightGrey);
+    border: 2px solid var(--primaryColor);
 }
 
 .third--button a {
-    color: rgba(var(--primaryColor), .75);
+    color: var(--primaryColor);
 }
 
 
 .third--button:hover {
-    color: rgba(var(--primaryColor), 1);
-    border: 2px solid rgba(var(--primaryColor), .75);
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
 }
 
 third--button:hover a {
-    color: rgba(var(--primaryColor), 1);
+    color: var(--primaryColor);
 }
 
 
@@ -118,9 +131,4 @@ third--button:hover a {
     border-radius: 5rem;
 }
 
-
-
-/* Crédits :
-            Baptiste L -> Style des boutons
-            Bryan V -> Noms des classes
-*/
+/* Crédit : Baptiste */

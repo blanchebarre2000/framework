@@ -1,16 +1,16 @@
+@import "reset.css";
+@import "variables.css";
+@import "base.css";
+@import "typo.css";
+@import "grid.css";
+@import "buttons.css";
+@import "card.css";
+@import "dropdown.css";
+@import "form.css";
+@import "nav.css";
+@import "tab.css";
+@import "tag.css";
+@import "util.css";
 
-@import 'colors.css';
-@import 'typographies.css';
-@import 'buttons.css';
-@import 'form.css';
-@import 'grid.css';
 
-.collapsible.full-width {
-  width: 100%;
-}
-
-
-
-/* Crédits :
-            Bryan -> Mise en place du fichier
-*/
+/* Crédit : Bryan */
