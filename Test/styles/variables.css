@@ -1,13 +1,12 @@
 :root {
-    --neutralColor: 50, 50, 50;
-    --primaryColor: 100, 50, 175;
-    --primaryColorDarker: 100, 50, 125;
-    --secondaryColor: 255, 0, 45;
+    --neutralColor: rgb(50, 50, 50);
+    --primaryColor: rgb(100, 50, 175);
+    --primaryColorDarker: rgb(100, 50, 125);
+    --secondaryColor: rgb(255, 0, 45);
     --baseUnit: 16px;
-    
+
     --bg-color: #ffffff;
     --bg-secondary-color: #f3f3f6;
-    --primaryColor: #14854F;
     --color-lightGrey: #d2d6dd;
     --color-grey: #747681;
     --color-darkGrey: #3f4144;
@@ -16,6 +15,6 @@
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
     --font-color: #333333;
-    --font-family-sans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif; 
+    --font-family-sans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
     --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
 }
