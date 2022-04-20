@@ -1,5 +1,5 @@
 label {
-    color: ;
+    color: var(--primaryColor);
     font-size: 16px;
     font-style: normal;
     font-family: ;
@@ -8,9 +8,9 @@ label {
 
 input {
     height: 48px;
-    background-color: ;
-    border-color: ;
-    color: ;
+    background-color: var(--whiteColor);
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
     font-size: var(--baseUnit);
     font-style: normal;
     font-family: ;
@@ -20,9 +20,9 @@ input {
 
 .selecteur {
     height: 48px;
-    background-color: ;
-    border-color: ;
-    color: ;
+    background-color: var(--whiteColor);
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
     font-size: 16px;
     font-style: normal;
     font-family: ;
