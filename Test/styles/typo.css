@@ -247,7 +247,7 @@ table {
 }
 
 table.striped tr:nth-of-type(2n) {
-    background-color: var(--secondaryColorLighter);
+    background-color: var(--secondaryColor_3);
 }
 
 td,
