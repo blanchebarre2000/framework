@@ -1,5 +1,5 @@
 .card {
-  padding: 1rem 2rem;
+  padding: var(--baseUnit) calc( var(--baseUnit) * 2);
   border-radius: 4px;
   background: var(--bgColor);
   box-shadow: 0 1px 3px var(--neutralColor);
@@ -13,3 +13,5 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
+
+/* Crédit : Bryan */

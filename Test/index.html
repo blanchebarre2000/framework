@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="styles/master.css" />
 </head>
 
-<body>
+<body class="mlx2">
     <div id="top" class="container" role="document">
         <nav role="navigation" class="nav">
           <header role="banner">
@@ -33,11 +33,6 @@
                         <li><a href="#embedded__images">Images</a></li>
                         <li><a href="#embedded__audio">Audio</a></li>
                         <li><a href="#embedded__video">Video</a></li>
-                        <li><a href="#embedded__canvas">Canvas</a></li>
-                        <li><a href="#embedded__meter">Meter</a></li>
-                        <li><a href="#embedded__progress">Progress</a></li>
-                        <li><a href="#embedded__svg">Inline SVG</a></li>
-                        <li><a href="#embedded__iframe">IFrames</a></li>
                     </ul>
                 </li>
                 <li class="dropdown-menu">
@@ -58,7 +53,6 @@
                         <li><a href="#components__nav">Nav</a></li>
                         <li><a href="#components__tabs">Tabs</a></li>
                         <li><a href="#components__card">Card</a></li>
-                        <li><a href="#components__tag">Tag</a></li>
                         <li><a href="#components__grid">Grid</a></li>
                     </ul>
                 </li>
@@ -67,8 +61,8 @@
         <footer>
             <p><a href="#top" class="buttonBackTop">Back to top</a></p>
         </footer>
-        <main role="main">
-            <section id="text">
+        <main class="margin-top-x2"role="main">
+            <section class="mtx2 ptx2 " id="text">
                 <header>
                     <h1>Text</h1>
                 </header>
@@ -85,6 +79,62 @@
                         <h6>Heading 6</h6>
                     </div>
 
+<pre><code>&lt;div&gt;
+      &lt;h1&gt;Heading 1&lt;/h1&gt;
+      &lt;h2&gt;Heading 2&lt;/h2&gt;
+      &lt;h3&gt;Heading 3&lt;/h3&gt;
+      &lt;h4&gt;Heading 4&lt;/h4&gt;
+      &lt;h5&gt;Heading 5&lt;/h5&gt;
+      &lt;h6&gt;Heading 6&lt;/h6&gt;
+  &lt;/div&gt; </code></pre>
+
+  <pre><code>/*Titres*/
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+      font-weight: 500;
+      margin: 0.35em 0 0.7em 0;
+  }
+
+  h1,
+  .h1 {
+      font-size: calc(var(--baseUnit) * 2.5);
+  }
+
+  h2,
+  .h2 {
+      font-size: calc(var(--baseUnit) * 2);
+  }
+
+  h3,
+  .h3 {
+      font-size: calc(var(--baseUnit) * 1.75);
+  }
+
+  h4,
+  .h4 {
+      font-size: calc(var(--baseUnit) * 1.5);
+  }
+
+  h5,
+  .h5 {
+      font-size: calc(var(--baseUnit) * 1.2);
+  }
+
+  h6,
+  .h6 {
+      font-size: calc(var(--baseUnit) * 0.8);
+  } </code></pre>
+
                 </article>
                 <article id="text__paragraphs">
                     <header>
@@ -92,12 +142,7 @@
                     </header>
                     <div>
                         <p>
-                            A paragraph (from the Greek paragraphos, “to write beside” or
-                            “written beside”) is a self-contained unit of a discourse in
-                            writing dealing with a particular point or idea. A paragraph
-                            consists of one or more sentences. Though not required by the
-                            syntax of any language, paragraphs are usually an expected part
-                            of formal writing, used to organize longer prose.
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
                 </article>
@@ -108,16 +153,12 @@
                     <div>
                         <blockquote>
                             <p>
-                                A block quotation (also known as a long quotation or extract)
-                                is a quotation in a written document, that is set off from the
-                                main text as a paragraph, or block of text.
+                                A block quotation. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                             </p>
                             <p>
-                                It is typically distinguished visually using indentation and a
-                                different typeface or smaller size quotation. It may or may
-                                not include a citation, usually placed at the bottom.
+                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                             </p>
-                            <cite><a href="#!">Said no one, ever.</a></cite>
+                            <cite><a href="">Author</a></cite>
                         </blockquote>
                     </div>
                 </article>
@@ -291,9 +332,6 @@
                             Abbreviation:
                             <abbr title="HyperText Markup Language">HTML</abbr>
                         </p>
-                        <p>
-                            <q cite="https://developer.mozilla.org/en-US/docs/HTML/Element/q">This text is a short inline quotation.</q>
-                        </p>
                         <p><cite>This is a citation.</cite></p>
                         <p>The <dfn>dfn element</dfn> indicates a definition.</p>
                         <p>The <mark>mark element</mark> indicates a highlight.</p>
@@ -301,15 +339,11 @@
                             The <var>variable element</var>, such as <var>x</var> =
                             <var>y</var>.
                         </p>
-                        <p>
-                            The time element:
-                            <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
-                        </p>
                     </div>
                 </article>
             </section>
 
-            <section id="embedded">
+            <section class="mtx2 ptx2" id="embedded">
                 <header>
                     <h1>Embedded content</h1>
                 </header>
@@ -351,42 +385,7 @@
                     </header>
                     <div><video controls="">video</video></div>
                 </article>
-                <article id="embedded__canvas">
-                    <header>
-                        <h2>Canvas</h2>
-                    </header>
-                    <div><canvas>canvas</canvas></div>
-                </article>
-                <article id="embedded__meter">
-                    <header>
-                        <h2>Meter</h2>
-                    </header>
-                    <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-                </article>
-                <article id="embedded__progress">
-                    <header>
-                        <h2>Progress</h2>
-                    </header>
-                    <div><progress>progress</progress></div>
-                </article>
-                <article id="embedded__svg">
-                    <header>
-                        <h2>Inline SVG</h2>
-                    </header>
-                    <div>
-                        <svg width="100px" height="100px">
-                            <circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle>
-                        </svg>
-                    </div>
-                </article>
-                <article id="embedded__iframe">
-                    <header>
-                        <h2>IFrame</h2>
-                    </header>
-                    <div><iframe src="index.html" height="300"></iframe></div>
-                </article>
-            </section>
-            <section id="forms">
+            <section class="mtx2 ptx2" id="forms">
                 <header>
                     <h1>Form elements</h1>
                 </header>
@@ -445,7 +444,6 @@
                             <button class="primary--button">Submit</button>
                         </p>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                     <fieldset id="forms__select">
                         <legend>Select menus</legend>
                         <p>
@@ -459,10 +457,9 @@
                             </select>
                         </p>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                     <fieldset id="forms__checkbox">
                         <legend>Checkboxes</legend>
-                        <ul class="list list--bare">
+                        <ul class="list ">
                             <li>
                                 <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
                                     Choice A</label>
@@ -477,7 +474,6 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                     <fieldset id="forms__radio">
                         <legend>Radio buttons</legend>
                         <ul class="list list--bare">
@@ -495,7 +491,6 @@
                             </li>
                         </ul>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                     <fieldset id="forms__textareas">
                         <legend>Textareas</legend>
                         <p>
@@ -503,7 +498,6 @@
                             <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
                         </p>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                     <fieldset id="forms__html5">
                         <legend>HTML5 inputs</legend>
                         <p>
@@ -539,28 +533,26 @@
                             <input type="datetime-local" id="idtl" value="1970-01-01T00:00" />
                         </p>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                     <fieldset id="forms__action">
                         <legend>Action buttons</legend>
                         <p>
-                            <input class="primary--button" type="submit" value="<input type=submit>" />
-                            <input class="secondary--button" type="button" value="<input type=button>" />
-                            <input class="third--button" type="reset" value="<input type=reset>" />
-                            <input class="primary--button" type="submit" value="<input disabled>" disabled />
+                            <input class="primary--button" type="submit" value="Input Submit" />
+                            <input class="secondary--button" type="button" value="Input Button" />
+                            <input class="third--button" type="reset" value="Input Reset" />
+                            <input class="primary--button" type="submit" value="Input Disabled" disabled />
                         </p>
                         <p>
-                            <button class="primary--button" type="submit">&lt;button type=submit&gt;</button>
-                            <button class="primary--button" type="button">&lt;button type=button&gt;</button>
-                            <button class="primary--button" type="reset">&lt;button type=reset&gt;</button>
-                            <button class="primary--button" type="button" disabled>&lt;button disabled&gt;</button>
+                            <button class="primary--button" type="submit">Button Submit</button>
+                            <button class="primary--button" type="button">Button Button</button>
+                            <button class="primary--button" type="reset">Button reset</button>
+                            <button class="primary--button" type="button" disabled>Button Disabled</button>
                         </p>
                         <p>
-                            <a href="#" class="button">a.button</a>
-                            <a href="#" class="button primary">a.button.primary</a>
-                            <a href="#" class="button secondary">a.button.secondary</a>
-                            <a href="#" class="button dark">a.button.dark</a>
-                            <a href="#" class="button error">a.button.error</a>
-                            <a href="#" class="button success">a.button.success</a>
+                            <a href="#" class="button primary">Link Primary Button</a>
+                            <a href="#" class="button secondary">Link Secondary Button</a>
+                            <a href="#" class="button dark">Link Dark Button</a>
+                            <a href="#" class="button error">Link Error Button</a>
+                            <a href="#" class="button success">Link Success Button</a>
                         </p>
                         <p>
                             <a href="#" class="button outline">a.button.outline</a>
@@ -570,11 +562,8 @@
                             <a href="#" class="button clear">a.button.clear</a>
                         </p>
                     </fieldset>
-                    <p><a href="#top">[Top]</a></p>
                 </form>
             </section>
-        </main>
-    </div>
     <h1 id="components__nav">Nav</h1>
 
     <div class="clearfix"></div>
@@ -609,8 +598,8 @@
             <a href="#">Link 3</a>
         </div>
     </nav>
-    <div class="container">
-        <section>
+    <div>
+        <section class="mtx2 ptx2">
             <br />
             <hr />
             <br />
@@ -688,7 +677,7 @@
                 </ul>
             </nav>
         </section>
-        <section>
+        <section class="mtx2 ptx2">
             <h2 id="components__tabs">Tabs</h2>
             <div class="tabs">
                 <a class="active" href="#">Tab 1</a>
@@ -704,7 +693,7 @@
                 <a href="#">Tab 3</a>
             </div>
         </section>
-        <section>
+        <section class="mtx2 ptx2">
             <h2 id="components__card">Card</h2>
             <div class="row is-center">
                 <div class="col-4">
@@ -740,7 +729,7 @@
                 </div>
             </div>
         </section>
-        <section>
+        <section class="mtx2 ptx2">
             <h1>Tag</h1>
             <p>
                 <span class="tag">One</span>
@@ -750,7 +739,7 @@
                 <span class="tag is-large">Large</span>
             </p>
         </section>
-        <section>
+        <section class="mtx2 ptx2">
             <h2 id="components__grid">Grid</h2>
             <div class="row">
                 <div class="col">
@@ -954,7 +943,8 @@
             </div>
         </section>
     </div>
-
+  </main>
+</div>
 </body>
 
 </html>

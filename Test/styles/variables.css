@@ -1,25 +1,30 @@
 :root {
 
-    /*COULEURS*/
+    /*COULEURS
+    Crédit : Baptiste*/
 
-    /*Couleur de fond*/
+    /*Couleur de fond
+    Crédit : Baptiste*/
     --bgColor: #ffffff;
 
-    /*Gris*/
+    /*Gris
+    Crédit : Baptiste*/
     --neutralColor: #747681;
     --neutralColorLighter: #d2d6dd;
     --neutralColorDarker: #3f4144;
     --errorColor: #d43939;
     --successColor: #28bd14;
 
-    /*Bleu*/
+    /*Bleu
+    Crédit : Baptiste*/
 /*
     --primaryColor: rgba(0, 135, 255, 1);
     --primaryColorLighter: rgba(145, 202, 252);
     --primaryColorDarker: rgba(0, 22, 42);
 */
 
-    /*Violet*/
+    /*Violet
+    Crédit : Baptiste*/
 /*
     --secondaryColor: rgba(131, 0, 255);
     --secondaryColorLighter: rgba(194, 130, 255);
@@ -28,7 +33,8 @@
 
 
 
-    /*Bleu violet*/
+    /*Bleu violet
+    Crédit : Baptiste*/
     --primaryColor_1: #FDFCFE;
     --primaryColor_2: #FBFAFF;
     --primaryColor_3: #F5F2FF;
@@ -51,7 +57,8 @@
     --primaryColorDarker: #20134B;
 
 
-    /*Violet*/
+    /*Violet
+    Crédit : Baptiste*/
     --secondaryColor_1: #FEFCFE;
     --secondaryColor_2: #FDFAFF;
     --secondaryColor_3: #F9F1FE;
@@ -83,12 +90,14 @@
     --baseUnit: 16px;
 
 
-    /*GRILLE*/
+    /*GRILLE
+    Crédit : Bryan*/
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
 
 
-    /*FONT*/
+    /*FONT
+    Crédit : Baptiste*/
     --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
 
     --fontFamilyMono: monaco, "Consolas", "Lucida Console", monospace;

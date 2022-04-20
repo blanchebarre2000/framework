@@ -91,23 +91,23 @@ button {
 
 
 .third--button {
-    color: rgba(var(--primaryColor), .75);
-    background-color: (var(--color-lightGrey);
-    border: 2px solid rgba(var(--primaryColor), .25);
+    color: var(--primaryColor);
+    background-color: var(--color-lightGrey);
+    border: 2px solid var(--primaryColor);
 }
 
 .third--button a {
-    color: rgba(var(--primaryColor), .75);
+    color: var(--primaryColor);
 }
 
 
 .third--button:hover {
-    color: rgba(var(--primaryColor), 1);
-    border: 2px solid rgba(var(--primaryColor), .75);
+    color: var(--primaryColor);
+    border: 2px solid var(--primaryColor);
 }
 
 third--button:hover a {
-    color: rgba(var(--primaryColor), 1);
+    color: var(--primaryColor);
 }
 
 
@@ -130,3 +130,5 @@ third--button:hover a {
     padding: .4rem .7rem .4rem .7rem;
     border-radius: 5rem;
 }
+
+/* Crédit : Baptiste */
