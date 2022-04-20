@@ -1,0 +1,30 @@
+.container-flex{
+ display: flex;
+ flex-wrap: wrap;
+ --gap: calc(var(--baseUnit) * 2);
+ gap: var(--gap);
+}
+
+.container-flex > *{
+  flex-grow: 1;
+}
+
+.container-flex > .col-sm-50{
+  flex-basis: calc(50% - var(--gap) * 1 / 2);
+}
+
+@media (min-width:600px){
+
+  .container-flex > .col-25{
+    flex-basis: calc(25% - var(--gap) * 3 / 4);
+  }
+
+  .container-flex > .col-50{
+    flex-basis: calc(50% - var(--gap) * 1 / 2);
+  }
+
+  .container-flex > .col-100{
+    flex-basis: 100%;
+  }
+
+}
