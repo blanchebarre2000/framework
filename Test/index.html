@@ -4,20 +4,20 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Rounded II</title>
+    <title>Framework</title>
     <link rel="stylesheet" href="styles/master.css" />
 </head>
 
 <body>
     <div id="top" class="container" role="document">
-        <header role="banner">
-            <h1>Rounded Framework CSS</h1>
-        </header>
-        <nav role="navigation">
-            <ul>
-                <li>
+        <nav role="navigation" class="nav">
+          <header role="banner">
+              <h1 class="nav-left">Framework CSS</h1>
+          </header>
+            <ul class="nav-right">
+                <li class="dropdown-menu">
                     <a href="#text">Text</a>
-                    <ul>
+                    <ul class="dropdown-menu-element">
                         <li><a href="#text__headings">Headings</a></li>
                         <li><a href="#text__paragraphs">Paragraphs</a></li>
                         <li><a href="#text__blockquotes">Blockquotes</a></li>
@@ -27,9 +27,9 @@
                         <li><a href="#text__inline">Inline elements</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="dropdown-menu">
                     <a href="#embedded">Embedded content</a>
-                    <ul>
+                    <ul class="dropdown-menu-element">
                         <li><a href="#embedded__images">Images</a></li>
                         <li><a href="#embedded__audio">Audio</a></li>
                         <li><a href="#embedded__video">Video</a></li>
@@ -40,9 +40,9 @@
                         <li><a href="#embedded__iframe">IFrames</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="dropdown-menu">
                     <a href="#forms">Form elements</a>
-                    <ul>
+                    <ul class="dropdown-menu-element">
                         <li><a href="#forms__input">Input fields</a></li>
                         <li><a href="#forms__select">Select menus</a></li>
                         <li><a href="#forms__checkbox">Checkboxes</a></li>
@@ -52,9 +52,9 @@
                         <li><a href="#forms__action">Action buttons</a></li>
                     </ul>
                 </li>
-                <li>
+                <li class="dropdown-menu">
                     <a href="#components">Components</a>
-                    <ul>
+                    <ul class="dropdown-menu-element">
                         <li><a href="#components__nav">Nav</a></li>
                         <li><a href="#components__tabs">Tabs</a></li>
                         <li><a href="#components__card">Card</a></li>
@@ -64,6 +64,9 @@
                 </li>
             </ul>
         </nav>
+        <footer>
+            <p><a href="#top" class="buttonBackTop">Back to top</a></p>
+        </footer>
         <main role="main">
             <section id="text">
                 <header>
@@ -81,9 +84,7 @@
                         <h5>Heading 5</h5>
                         <h6>Heading 6</h6>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
+
                 </article>
                 <article id="text__paragraphs">
                     <header>
@@ -99,9 +100,6 @@
                             of formal writing, used to organize longer prose.
                         </p>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="text__blockquotes">
                     <header>
@@ -122,9 +120,6 @@
                             <cite><a href="#!">Said no one, ever.</a></cite>
                         </blockquote>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="text__lists">
                     <header>
@@ -149,9 +144,6 @@
                             <li>List Item 3</li>
                         </ul>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="text__hr">
                     <header>
@@ -160,9 +152,6 @@
                     <div>
                         <hr />
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="text__tables">
                     <header>
@@ -265,9 +254,6 @@
                             </tr>
                         </tbody>
                     </table>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="text__inline">
                     <header>
@@ -320,9 +306,6 @@
                             <time datetime="2013-04-06T12:32+00:00">2 weeks ago</time>
                         </p>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
             </section>
 
@@ -355,54 +338,36 @@
                             <figcaption>Here is a caption for this image.</figcaption>
                         </figure>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__audio">
                     <header>
                         <h2>Audio</h2>
                     </header>
                     <div><audio controls="">audio</audio></div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__video">
                     <header>
                         <h2>Video</h2>
                     </header>
                     <div><video controls="">video</video></div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__canvas">
                     <header>
                         <h2>Canvas</h2>
                     </header>
                     <div><canvas>canvas</canvas></div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__meter">
                     <header>
                         <h2>Meter</h2>
                     </header>
                     <div><meter value="2" min="0" max="10">2 out of 10</meter></div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__progress">
                     <header>
                         <h2>Progress</h2>
                     </header>
                     <div><progress>progress</progress></div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__svg">
                     <header>
@@ -413,18 +378,12 @@
                             <circle cx="100" cy="100" r="100" fill="#1fa3ec"></circle>
                         </svg>
                     </div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
                 <article id="embedded__iframe">
                     <header>
                         <h2>IFrame</h2>
                     </header>
                     <div><iframe src="index.html" height="300"></iframe></div>
-                    <footer>
-                        <p><a href="#top">[Top]</a></p>
-                    </footer>
                 </article>
             </section>
             <section id="forms">
@@ -670,7 +629,7 @@
                 <div class="nav-left">
                     <a class="brand" href="#">
                         <img src="" alt="" />
-                        Brand</a>
+                        Logo</a>
                 </div>
                 <div class="nav-right">
                     <div class="tabs">
@@ -686,7 +645,7 @@
             <nav class="nav">
                 <div class="nav-left">
                     <a class="brand" href="#">
-                        <img src="" alt="" />
+                        <img src="" alt="" />Logo
                     </a>
                     <div class="tabs">
                         <a href="#">Link 1</a>
@@ -698,6 +657,36 @@
             <br />
             <hr />
             <br />
+            <nav role="navigation" class="nav">
+              <a class="brand" href="#">
+              <img src="" alt="" />Logo</a>
+                <ul class="nav-right">
+                    <li class="dropdown-menu">
+                        <a href="#">Link 1</a>
+                        <ul class="dropdown-menu-element">
+                            <li><a href="#">Under Link 1</a></li>
+                            <li><a href="#">Under Link 2</a></li>
+                            <li><a href="#">Under Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-menu">
+                        <a href="#">Link 2</a>
+                        <ul class="dropdown-menu-element">
+                            <li><a href="#">Under Link 1</a></li>
+                            <li><a href="#">Under Link 2</a></li>
+                            <li><a href="#">Under Link 3</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown-menu">
+                        <a href="#">Link 3</a>
+                        <ul class="dropdown-menu-element">
+                            <li><a href="#">Under Link 1</a></li>
+                            <li><a href="#">Under Link 2</a></li>
+                            <li><a href="#">Under Link 3</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
         </section>
         <section>
             <h2 id="components__tabs">Tabs</h2>

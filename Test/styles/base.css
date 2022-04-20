@@ -1,10 +1,11 @@
 html {
     box-sizing: border-box;
-    font-size: 1rem;
+    font-size: var(--baseUnit);
     line-height: 1.15;
-    -ms-text-size-adjust: 100%;
-    -webkit-text-size-adjust: 100%;
+    overflow-y: scroll;
+scroll-behavior: smooth;
 }
+
 
 *,
 *:before,
@@ -21,13 +22,12 @@ html {
 body {
     background-color: var(--bgColor);
     line-height: 1.6;
-    font-size: var(--font-size);
-    color: var(--fontColor);
+    font-size: var(--baseUnit);
+    color: var(--font-color);
     font-family: "Segoe UI", "Helvetica Neue", sans-serif;
     /*fallback*/
-    font-family: var(--fontFamilySans);
-    margin: 0;
-    padding: 0;
+    font-family: var(--font-family-sans);
+    width: 80%;
 }
 
 
@@ -41,6 +41,12 @@ fieldset {
     border: 1px solid var(--neutralColorLighter);
 }
 
-iframe {
-    border: 0;
+.buttonBackTop {
+  position:fixed;
+  bottom: var(--baseUnit);
+  float: right;
+  right: var(--baseUnit);
+  color: var(--bg-color);
+  background-color: var(--primaryColor);
+  padding: var(--baseUnit);
 }
