@@ -1,21 +1,42 @@
 :root {
-    --neutralColor: 50, 50, 50;
-    --primaryColor: 100, 50, 175;
-    --primaryColorDarker: 100, 50, 125;
-    --secondaryColor: 255, 0, 45;
-    --baseUnit: 16px;
     
-    --bg-color: #ffffff;
-    --bg-secondary-color: #f3f3f6;
-    --primaryColor: #14854F;
-    --color-lightGrey: #d2d6dd;
-    --color-grey: #747681;
-    --color-darkGrey: #3f4144;
+/*COULEURS*/
+    
+    /*Couleur de fond*/
+    --bgColor: #ffffff;
+    
+    /*Gris*/
+    --neutralColor: #747681;
+    --neutralColorLighter: #d2d6dd;
+    --neutralColorDarker: #3f4144;
     --errorColor: #d43939;
     --successColor: #28bd14;
+    
+    /*Bleu*/
+    --primaryColor: rgba(0, 135, 255, 1);
+    --primaryColorLighter: rgba(145, 202, 252);
+    --primaryColorDarker: rgba(0, 22, 42);
+    
+    /*Violet*/
+    --secondaryColor: rgba(131, 0, 255);
+    --secondaryColorLighter: rgba(194, 130, 255);
+    --secondaryColorDarker: rgba(31, 0, 59);
+    
+    /*Couleur de font*/
+    --fontColor: #333333;
+    
+    
+/*ÉTALON DE MESURE*/
+    --baseUnit: 16px;
+    
+    
+/*GRILLE*/
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
-    --font-color: #333333;
-    --font-family-sans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif; 
-    --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+    
+    
+/*GRILLE*/
+    --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif; 
+    
+    --fontFamilyMono: monaco, "Consolas", "Lucida Console", monospace;
 }
