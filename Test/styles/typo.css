@@ -177,32 +177,32 @@ h6,
 
 h1,
 .h1 {
-    font-size: 2em;
+    font-size: calc(var(--baseUnit) * 2.5);
 }
 
 h2,
 .h2 {
-    font-size: 1.75em;
+    font-size: calc(var(--baseUnit) * 2);
 }
 
 h3,
 .h3 {
-    font-size: 1.50em;
+    font-size: calc(var(--baseUnit) * 1.75);
 }
 
 h4,
 .h4 {
-    font-size: 1.25em;
+    font-size: calc(var(--baseUnit) * 1.5);
 }
 
 h5,
 .h5 {
-    font-size: 1em;
+    font-size: calc(var(--baseUnit) * 1.2);
 }
 
 h6,
 .h6 {
-    font-size: 0.9em;
+    font-size: calc(var(--baseUnit) * 0.8);
 }
 
 
@@ -239,7 +239,6 @@ hr {
 }
 
 table {
-    width: 100%;
     border: none;
     border-collapse: collapse;
     border-spacing: 0;
@@ -279,12 +278,12 @@ kbd {
     white-space: pre-wrap;
     border-radius: 4px;
     padding: 0.2em 0.4em;
-    background-color: var(--secondaryColorLighter);
-    color: var(--errorColor);
+    background-color: var(--neutralColorDarker);
+    color: var(--primaryColor_1);
 }
 
 pre {
-    background-color: var(--secondaryColorLighter);
+    background-color: var(--neutralColorDarker);
     font-size: 1em;
     padding: 1rem;
     overflow-x: auto;
@@ -300,21 +299,6 @@ abbr[title] {
     text-decoration: underline;
     text-decoration: underline dotted;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 /*Paragraphes*/
@@ -373,8 +357,4 @@ figcaption cite,
 
 
 
-/*code by Baptiste Levasseur*/
-
-
-
-*/
+/* Crédit : Baptiste */

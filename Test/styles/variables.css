@@ -1,25 +1,30 @@
 :root {
 
-    /*COULEURS*/
+    /*COULEURS
+    Crédit : Baptiste*/
 
-    /*Couleur de fond*/
+    /*Couleur de fond
+    Crédit : Baptiste*/
     --bgColor: #ffffff;
 
-    /*Gris*/
+    /*Gris
+    Crédit : Baptiste*/
     --neutralColor: #747681;
     --neutralColorLighter: #d2d6dd;
     --neutralColorDarker: #3f4144;
     --errorColor: #d43939;
     --successColor: #28bd14;
 
-    /*Bleu*/
+    /*Bleu
+    Crédit : Baptiste*/
 /*
     --primaryColor: rgba(0, 135, 255, 1);
     --primaryColorLighter: rgba(145, 202, 252);
     --primaryColorDarker: rgba(0, 22, 42);
 */
 
-    /*Violet*/
+    /*Violet
+    Crédit : Baptiste*/
 /*
     --secondaryColor: rgba(131, 0, 255);
     --secondaryColorLighter: rgba(194, 130, 255);
@@ -28,48 +33,50 @@
 
 
 
-    /*Bleu violet*/
+    /*Bleu violet
+    Crédit : Baptiste*/
     --primaryColor_1: #FDFCFE;
     --primaryColor_2: #FBFAFF;
     --primaryColor_3: #F5F2FF;
     --primaryColor_4: #EDE9FE;
-    --primaryColor_5: #E4DEFC; 
+    --primaryColor_5: #E4DEFC;
     --primaryColor_6: #D7CFF9;
-    
+
     --primaryColor_7: #C4B8F3;
     --primaryColorLighter: #C4B8F3;
-    
+
     --primaryColor_8: #AA99EC;
     --primaryColor_9: #6E56CF;
-    
+
     --primaryColor_10: #644FC1;
     --primaryColor: #644FC1;
-    
+
     --primaryColor_11: #5746AF;
-    
+
     --primaryColor_12: #20134B;
     --primaryColorDarker: #20134B;
 
 
-    /*Violet*/
+    /*Violet
+    Crédit : Baptiste*/
     --secondaryColor_1: #FEFCFE;
     --secondaryColor_2: #FDFAFF;
     --secondaryColor_3: #F9F1FE;
     --secondaryColor_4: #F3E7FC;
-    --secondaryColor_5: #EDDBF9; 
+    --secondaryColor_5: #EDDBF9;
     --secondaryColor_6: #E3CCF4;
-    
+
     --secondaryColor_7: #D3B4ED;
     --secondaryColorLighter: #D3B4ED;
-    
+
     --secondaryColor_8: #BE93E4;
     --secondaryColor_9: #8E4EC6;
-    
+
     --secondaryColor_10: #8445BC;
     --secondaryColor: #8445BC;
-    
+
     --secondaryColor_11: #793AAF;
-    
+
     --secondaryColor_12: #2B0E44;
     --secondaryColorDarker: #2B0E44;
 
@@ -83,12 +90,14 @@
     --baseUnit: 16px;
 
 
-    /*GRILLE*/
+    /*GRILLE
+    Crédit : Bryan*/
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
 
 
-    /*FONT*/
+    /*FONT
+    Crédit : Baptiste*/
     --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
 
     --fontFamilyMono: monaco, "Consolas", "Lucida Console", monospace;
