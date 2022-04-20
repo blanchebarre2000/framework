@@ -22,7 +22,6 @@
                         <li><a href="#text__paragraphs">Paragraphs</a></li>
                         <li><a href="#text__blockquotes">Blockquotes</a></li>
                         <li><a href="#text__lists">Lists</a></li>
-                        <li><a href="#text__hr">Horizontal rules</a></li>
                         <li><a href="#text__tables">Tabular data</a></li>
                         <li><a href="#text__inline">Inline elements</a></li>
                     </ul>
@@ -145,6 +144,19 @@
                             Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                         </p>
                     </div>
+
+                    <pre><code>&lt;p>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p> </code></pre>
+
+<pre><code>/*Paragraphes*/
+
+p,
+.p {
+    font-size: var(--baseUnit);
+    font-weight: 100;
+    line-height: 1.15rem;
+}</pre></code>
                 </article>
                 <article id="text__blockquotes">
                     <header>
@@ -161,6 +173,42 @@
                             <cite><a href="">Author</a></cite>
                         </blockquote>
                     </div>
+
+                <pre><code>&lt;blockquote>
+&lt;p>
+A block quotation. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p>
+&lt;p>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p>
+&lt;cite> &lt;a href="">Author &lt;/a> &lt;/cite>
+&lt;/blockquote></code></pre>
+
+<pre><code>/*Bloc de citations*/
+
+quote,
+.quote {
+    margin: 2vw;
+}
+
+blockquote,
+.blockquote {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: aliceblue;
+}
+
+blockquote p::before,
+.blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after,
+.blockquote p::after {
+    content: '\201D';
+}
+</code></pre>
                 </article>
                 <article id="text__lists">
                     <header>
@@ -184,14 +232,6 @@
                             <li>List Item 2</li>
                             <li>List Item 3</li>
                         </ul>
-                    </div>
-                </article>
-                <article id="text__hr">
-                    <header>
-                        <h1>Horizontal rules</h1>
-                    </header>
-                    <div>
-                        <hr />
                     </div>
                 </article>
                 <article id="text__tables">
