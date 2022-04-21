@@ -1,6 +1,6 @@
 :root {
 
-/*COULEURS
+    /*COULEURS
     Crédit : Baptiste*/
 
     /*Couleur de fond
@@ -80,23 +80,18 @@
     --secondaryColor_12: #2B0E44;
     --secondaryColorDarker: #2B0E44;
 
-
-
-    /*Couleur de font*/
-    --fontColor: #333333;
-
-
-/*ÉTALON DE MESURE*/
+    /*ÉTALON DE MESURE
+    Crédit : Blanche*/
     --baseUnit: 16px;
 
 
-/*GRILLE
+    /*GRILLE
     Crédit : Bryan*/
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
 
 
-/*FONT
+    /*FONT
     Crédit : Baptiste*/
     --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
 
