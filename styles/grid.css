@@ -1,13 +1,23 @@
 .container {
     max-width: var(--grid-maxWidth);
     margin: 0 auto;
-    width: 95vw;
+    width: 90%;
+    max-width: 1220px;
     padding: 0 calc(var(--grid-gutter) / 2);
+}
+
+
+@media screen and (min-width: 0px) {
+
+    .container {
+        width: 86%;
+    }
+
 }
 
 .row {
     display: flex;
-    flex-flow: row wrap;
+    /*    flex-flow: row wrap;*/
     justify-content: flex-start;
     margin-left: calc(var(--grid-gutter) / -2);
     margin-right: calc(var(--grid-gutter) / -2);
@@ -17,6 +27,10 @@
     flex-direction: row-reverse;
 }
 
+article {
+    margin: 4rem 0;
+}
+
 .col {
     flex: 1;
 }
@@ -24,7 +38,7 @@
 .col,
 [class*=" col-"],
 [class^='col-'] {
-    margin: 0 calc(var(--grid-gutter) / 2) calc(var(--grid-gutter) / 2);
+    margin: 0 calc(var(--grid-gutter) / 2.5) calc(var(--grid-gutter) / 2.5);
 }
 
 .col-1 {
@@ -87,10 +101,8 @@
     max-width: calc((100% / (12/12)) - var(--grid-gutter));
 }
 
-@media screen and (max-width: 599px) {
-    .container {
-        width: 100%;
-    }
+/*
+@media screen and (min-width: 480px) {
 
     .col,
     [class*="col-"],
@@ -99,6 +111,7 @@
         max-width: 100%;
     }
 }
+*/
 
 @media screen and (min-width: 900px) {
     .col-1-md {

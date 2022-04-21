@@ -155,6 +155,24 @@ html {
 
 
 
+/*Titres & Paragraphes*/
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6,
+p,
+.p {
+    color: var(--primaryColorDarker);
+}
+
 
 
 /*Titres*/
@@ -171,7 +189,7 @@ h5,
 h6,
 .h6 {
     font-weight: 500;
-    margin: 0.35em 0 0.7em 0;
+    margin: .75rem 0 .25rem 0;
 }
 
 
@@ -253,7 +271,9 @@ td,
 th {
     vertical-align: middle;
     padding: 1.2rem 0.4rem;
+    color: var(--primaryColor_11);
 }
+
 
 thead {
     border-bottom: 2px solid var(--neutralColorLighter);
@@ -274,19 +294,24 @@ tt {
 code,
 kbd {
     padding: 0 0.4rem;
-    font-size: 90%;
+    font-size: .9rem;
     white-space: pre-wrap;
     border-radius: 4px;
-    padding: 0.2em 0.4em;
     background-color: var(--neutralColorDarker);
     color: var(--primaryColor_1);
 }
 
 pre {
     background-color: var(--neutralColorDarker);
-    font-size: 1em;
-    padding: 1rem;
+    margin: 1.75rem 0 0 0;
+    padding: 2rem;
     overflow-x: auto;
+    max-width: 750px;
+    border-radius: .75rem;
+}
+
+pre:nth-child(1) {
+    margin-top: 2rem;
 }
 
 pre code {
@@ -305,9 +330,11 @@ abbr[title] {
 
 p,
 .p {
-    font-size: var(--baseUnit);
+    font-size: 1rem;
     font-weight: 100;
-    line-height: 1.15rem;
+    line-height: 1.35rem;
+    margin: .5rem 0 .25rem 0;
+    color: var(--primaryColor_11);
 }
 
 

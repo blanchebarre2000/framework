@@ -84,7 +84,7 @@ button {
     background-color: var(--primaryColor);
 }
 
-.secondary--button:hover a  {
+.secondary--button:hover a {
     color: rgba(255, 255, 255, 1);
 }
 
@@ -114,8 +114,7 @@ third--button:hover a {
 
 
 
-.big--button {
-}
+.big--button {}
 
 .medium--button {
     margin: 0.5rem;

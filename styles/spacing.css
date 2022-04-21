@@ -195,6 +195,16 @@ Crédit : Bryan*/
     margin-left: calc(var(--baseUnit) * 2);
 }
 
+@media screen and (max-width: 480px) {
+
+    .margin-left-x2,
+    .mlx2 {
+        margin-left: 0rem;
+    }
+
+}
+
+
 .margin-left-x4,
 .mlx4 {
     margin-left: calc(var(--baseUnit) * 4);

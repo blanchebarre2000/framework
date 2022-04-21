@@ -16,10 +16,6 @@ body {
     margin: 0 auto;
 }
 
-body > .container {
-  width: 70%;
-}
-
 img {
     max-width: 100%;
 }

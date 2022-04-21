@@ -1,6 +1,6 @@
 :root {
 
-    /*COULEURS
+/*COULEURS
     Crédit : Baptiste*/
 
     /*Couleur de fond
@@ -45,13 +45,13 @@
     --primaryColor_7: #C4B8F3;
     --primaryColorLighter: #C4B8F3;
 
-    --primaryColor_8: #AA99EC;
+    --primaryColor_8: #A291E0;
     --primaryColor_9: #6E56CF;
 
-    --primaryColor_10: #644FC1;
-    --primaryColor: #644FC1;
+    --primaryColor_10: #5745A8;
+    --primaryColor: #5745A8;
 
-    --primaryColor_11: #5746AF;
+    --primaryColor_11: #3E327D;
 
     --primaryColor_12: #20134B;
     --primaryColorDarker: #20134B;
@@ -69,13 +69,13 @@
     --secondaryColor_7: #D3B4ED;
     --secondaryColorLighter: #D3B4ED;
 
-    --secondaryColor_8: #BE93E4;
-    --secondaryColor_9: #8E4EC6;
+    --secondaryColor_8: #B28AD6;
+    --secondaryColor_9: #7C44AD;
 
-    --secondaryColor_10: #8445BC;
-    --secondaryColor: #8445BC;
+    --secondaryColor_10: #61338A;
+    --secondaryColor: #61338A;
 
-    --secondaryColor_11: #793AAF;
+    --secondaryColor_11: #452163;
 
     --secondaryColor_12: #2B0E44;
     --secondaryColorDarker: #2B0E44;
@@ -86,17 +86,17 @@
     --fontColor: #333333;
 
 
-    /*ÉTALON DE MESURE*/
+/*ÉTALON DE MESURE*/
     --baseUnit: 16px;
 
 
-    /*GRILLE
+/*GRILLE
     Crédit : Bryan*/
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
 
 
-    /*FONT
+/*FONT
     Crédit : Baptiste*/
     --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
 
