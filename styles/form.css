@@ -1,3 +1,37 @@
+<<<<<<< HEAD
+label {
+    color: var(--primaryColor);
+    font-size: 16px;
+    font-style: normal;
+    font-family: ;
+    letter-spacing: normal;
+}
+
+input {
+    height: 48px;
+    background-color: var(--whiteColor);
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+    font-size: var(--baseUnit);
+    font-style: normal;
+    font-family: ;
+    letter-spacing: normal;
+    border-radius: 8px;
+}
+
+.selecteur {
+    height: 48px;
+    background-color: var(--whiteColor);
+    border-color: var(--primaryColor);
+    color: var(--primaryColor);
+    font-size: 16px;
+    font-style: normal;
+    font-family: ;
+    letter-spacing: normal;
+    border-radius: 8px;
+}
+/* Blanche */
+=======
 fieldset {
     padding: 0.5rem 2rem;
 }
@@ -69,3 +103,4 @@ select {
 
 
 /* Crédit : Blanche */
+>>>>>>> main
