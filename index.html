@@ -1,907 +1,1933 @@
-<!DOCTYPE html><html lang="fr">
+<!DOCTYPE html>
+<html lang="en">
 
-<!-- Master CSS -->
-<link rel="stylesheet" href="styles/master.css">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Framework</title>
+    <link rel="stylesheet" href="styles/master.css" />
+</head>
 
-<body class="">
-  <div id="root">
-  <header class="row">
-    <span class=" col-sm-50">Framework</span>
-      <a href="#getting-started" id="link-to-getting-started">Getting started</a>
-      <a href="#heading" id="link-to-heading">Headings</a>
-      <a href="#images-captions" id="link-to-images-captions">Images & captions</a>
-      <a href="#lists" id="link-to-lists">Lists</a>
-      <a href="#grid" id="link-to-grid">Grid</a>
-      <a href="#cards" id="link-to-cards">Cards</a>
-      <a href="#forms-and-input" id="link-to-forms">Forms</a>
-      <a href="#buttons" id="link-to-buttons">Buttons</a>
-      <a href="#header" id="link-to-header">Header</a>
-      <a href="#navigation-bar" id="link-to-navigation-bar">Navigation bar</a>
-      <a href="#footer" id="link-to-footer">Footer</a>
-      <a href="#tables" id="link-to-tables">Tables</a>
-      <a href="#modal-dialogs" id="link-to-modal-dialogs">Modal dialogs</a>
-      <a href="#spoilers-and-accordions" id="link-to-spoilers-and-accordions">Spoilers & accordions</a>
-      <a href="#progress-bars" id="link-to-progress-bars">Progress bars</a>
-      <a href="#icons" id="link-to-icons">Icons</a>
-      <a href="#responsive-spacing-sizing" id="link-to-responsive-spacing-sizing">Responsive spacing & sizing</a>
-    </nav>
-    <main class="col-sm-12 col-md-8 col-lg-9" id="doc-content">
-      <div id="getting-started" class="card fluid">
-        <h2 class="section double-padded">Getting started</h2>
-        <div class="section">
-          <p>
-            You can get started using
-            <strong>Framework</strong>
-          </p>
+<body>
 
-<<<<<<< HEAD
-
-<form>
-  <div>
-    <label for="name">What's your name ?</label>
-    <br>
-    <input type="text" id="name">
-  </div>
-  <div class="selecteur">
-    <label for="name">Title</label>
-    <br>
-    <select name="name" id="select">
-      <option value="">Choisissez "name"</option>
-      <option value="name1">Name1</option>
-      <option value="name2">Name2</option>
-      <option value="name3">Name3</option>
-      <option value="name4">Name4</option>
-      <option value="name5">Name5</option>
-      <option value="name6">Name6</option>
-    </select>
-  </div>
-  <div>
-    <label for="tentacles">Number of tentacles (10-100):</label>
-    <br>
-    <input type="number" id="tentacles" name="tentacles"
-         min="10" max="100">
-  </div>
-  <div class="password">
-    <p>
-      <label for="nickname">Your nickname :</label>
-      <br>
-      <input type="text" name="nickname" id="nickname" />
-      
-      <br>
-      <label for="password">Your password :</label>
-      <br>
-      <input type="password" name="password" id="password" />
-    </p>
-  </div>
-  <div>
-      <p>
-          <label for="improve">Develop a text :</label>
-          <br>
-          <textarea name="improve" id="improve"></textarea>
-      </p>
-  </div>
-  <input class="range" type="range" />
-  <br>
-  <input class="calendar" type="date" />
-  <p>
-    Check the choice you want :<br />
-    <input type="checkbox" name="choice1" id="choice1" /> <label for="choice1">choice1</label><br />
-    <input type="checkbox" name="choice2" id="choice2" /> <label for="choice2">choice2</label><br />
-    <input type="checkbox" name="choice3" id="choice3" /> <label for="choice3">choice3</label><br />
-    <input type="checkbox" name="choice4" id="choice4" /> <label for="choice4">choice4</label>
-  </p>
-  
-</form>
-  
-  
+          <br/>
 =======
-          <br/>
+    <div id="top" class="container" role="document">
+
+        <nav role="navigation" class="nav">
+            <header role="banner">
+                <h1 class="nav-left">Framework CSS</h1>
+            </header>
+            <ul class="nav-right">
+              <li class="dropdown-menu">
+                  <a href="#variables">Variables</a>
+                  <ul class="dropdown-menu-element">
+                      <li><a href="#variables__color">Color</a></li>
+                      <li><a href="#variables__other">Paragraphs</a></li>
+                  </ul>
+                <li class="dropdown-menu">
+                    <a href="#text">Text</a>
+                    <ul class="dropdown-menu-element">
+                        <li><a href="#text__headings">Headings</a></li>
+                        <li><a href="#text__paragraphs">Paragraphs</a></li>
+                        <li><a href="#text__blockquotes">Blockquotes</a></li>
+                        <li><a href="#text__lists">Lists</a></li>
+                        <li><a href="#text__tables">Tabular data</a></li>
+                        <li><a href="#text__inline">Inline elements</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a href="#embedded">Embedded</a>
+                    <ul class="dropdown-menu-element">
+                        <li><a href="#embedded__images">Images</a></li>
+                        <li><a href="#embedded__audio">Audio</a></li>
+                        <li><a href="#embedded__video">Video</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a href="#forms">Form</a>
+                    <ul class="dropdown-menu-element">
+                        <li><a href="#forms__input">Input fields</a></li>
+                        <li><a href="#forms__select">Select menus</a></li>
+                        <li><a href="#forms__checkbox">Checkboxes</a></li>
+                        <li><a href="#forms__radio">Radio buttons</a></li>
+                        <li><a href="#forms__textareas">Textareas</a></li>
+                        <li><a href="#forms__html5">HTML5 inputs</a></li>
+                        <li><a href="#forms__action">Action buttons</a></li>
+                    </ul>
+                </li>
+                <li class="dropdown-menu">
+                    <a href="#components">Components</a>
+                    <ul class="dropdown-menu-element">
+                        <li><a href="#components__nav">Nav</a></li>
+                        <li><a href="#components__tabs">Tabs</a></li>
+                        <li><a href="#components__card">Card</a></li>
+                        <li><a href="#components__grid">Grid</a></li>
+                    </ul>
+                </li>
+                <li><a class="secondary--button" href="docs/FrameworkCss.zip">Download</a></li>
+            </ul>
+        </nav>
+
+        <footer>
+            <p><a href="#top" class="buttonBackTop">Back to top</a></p>
+        </footer>
+
+        <main class="mtx2" role="main">
 
 
-<!-- HEADINGS -->
+<section class="mtx4 ptx4" id="variables">
+          <header>
+              <h2>Variables</h2>
+          </header>
+          <article class="mtx2 ptx2" id="variables__color">
+              <header>
+                  <h3>Colors</h3>
+              </header>
+              <div>
+                  <img src="styles/IMG/Purple.png">
+                  <img src="styles/IMG/Violet.png">
+              </div>
 
-      <div id="heading" class="card fluid">
-        <h2 class="section double-padded">Headings</h2>
-        <div class="section">
-          <p>
-            Texte
-          </p>
-        </div>
-        <div class="section">
-          <h3>Example</h3>
-          <div class="row">
-            <div class="col-sm-12 col-md-6 col-md-first">
-              <h1 class="">Heading 1<small class="">Subheading</small></h1>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h2 class="">Heading 2<small class="">Subheading</small></h2>
-            </div>
-            <div class="col-sm-12 col-md-6 col-md-last">
-              <h3 class="">Heading 3<small class="">Subheading</small></h3>
-            </div>
-            <div class="col-sm-12 col-md-6 col-md-first">
-              <h4 class="">Heading 4<small class="">Subheading</small></h4>
-            </div>
-            <div class="col-sm-12 col-md-6">
-              <h5 class="doc">
-                Heading 5
-                <small class="doc">
-                  Subheading
-                </small>
-              </h5>
-            </div>
-            <div class="col-sm-12 col-md-6 col-md-last">
-              <h6 class="doc">
-                Heading 6
-                <small class="doc">
-                  Subheading
-                </small>
-              </h6>
-            </div>
-          </div>
-        </div>
-        <div class="section double-padded prefiller-example">
-          <h3>Sample code</h3>
-          <pre>
-            <span class="code-line">
-              <span class="highlight-a">&lt;h1&gt;</span>
-              Heading 1
-              <span class="highlight-a">&lt;small&gt;</span>
-              Subheading
-              <span class="highlight-a">&lt;/small&gt;&lt;/h1&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;h2&gt;</span>
-              Heading 2
-              <span class="highlight-a">&lt;small&gt;</span>
-              Subheading
-              <span class="highlight-a">&lt;/small&gt;&lt;/h2&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;h3&gt;</span>
-              Heading 3
-              <span class="highlight-a">&lt;small&gt;</span>
-              Subheading
-              <span class="highlight-a">&lt;/small&gt;&lt;/h3&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;h4&gt;</span>
-              Heading 4
-              <span class="highlight-a">&lt;small&gt;</span>
-              Subheading
-              <span class="highlight-a">&lt;/small&gt;&lt;/h4&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;h5&gt;</span>
-              Heading 5
-              <span class="highlight-a">&lt;small&gt;</span>
-              Subheading
-              <span class="highlight-a">&lt;/small&gt;&lt;/h5&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;h6&gt;</span>
-              Heading 6
-              <span class="highlight-a">&lt;small&gt;</span>
-              Subheading
-              <span class="highlight-a">&lt;/small&gt;&lt;/h6&gt;</span>
-            </span>
-          </pre>
-        </div>
-        <div class="section double-padded">
-          <h3>Customization</h3>
-          <ul>
-            <li>Primary text color can be changed globally by changing the value of the <code>.primaryColor</code>.</li>
-            <li>Secondary text color can be changed globally by changing the value of the <code>.secondaryColor</code>.</li>
-          </ul>
-        </div>
-      </div>
-      <br/>
-      <div id="images-captions" class="card fluid">
-        <h2 class="section double-padded">Images & captions</h2>
-        <div class="section">
-          <p>
-            Texte
-          </p>
-        </div>
-        <div class="section">
-          <h3>Example</h3>
-          <figure>
-            <img src="https://placehold.it/800x600" alt="placeholder">
-            <figcaption class="doc">
-              Image caption
-            </figcaption>
-          </figure>
-        </div>
-        <div class="section double-padded prefiller-example">
-          <h3>Sample code</h3>
-          <pre>
-            <span class="code-line">
-              <span class="highlight-a">&lt;img</span>
-              <span class="highlight-b">src</span>
-              =
-              <span class="highlight-c">&quot;image.png&quot;</span>
-              <span class="highlight-b">alt</span>
-              =
-              <span class="highlight-c">&quot;Image description&quot;</span>
-              <span class="highlight-a">/&gt;</span>
-            </span>
-          </pre>
-          <pre>
-            <span class="code-line"><span class="highlight-a">&lt;figure&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;img</span>
-              <span class="highlight-b">src</span>
-              =
-              <span class="highlight-c">&quot;image.png&quot;</span>
-              <span class="highlight-b">alt</span>
-              =
-              <span class="highlight-c">&quot;Image description&quot;</span>
-              <span class="highlight-a">/&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;figcaption&gt;</span>
-              Image caption
-              <span class="highlight-a">&lt;/figcaption&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/figure&gt;</span></span>
-          </pre>
-        </div>
+              <pre><code>/*Couleurs*/
 
-        <div class="section double-padded">
-          <h3>Customization</h3>
-          <ul>
-            <li>
-              You can change the text color of
-              <code>
-                --
-              </code>
-               elements by changing the value of the
-              <code>
-                --
-              </code>
-               variable.
-            </li>
-          </ul>
-        </div>
-      </div>
-      <br/>
-      <div id="lists" class="card fluid">
-        <h2 class="section double-padded">Lists</h2>
-        <div class="section">
-          <p>
-            Texte
-          </p>
-        </div>
-        <div class="section">
-          <h3>Example</h3>
-          <ul class="doc">
-            <li class="doc">Ex 1</li>
-            <li class="doc">Ex 2</li>
-            <li class="doc">Ex 3</li>
-          </ul>
-          <br/>
-          <ol class="doc">
-            <li class="doc">Ex 1</li>
-            <li class="doc">Ex 2</li>
-            <li class="doc">Ex 3</li>
-          </ol>
-        </div>
-        <div class="section double-padded prefiller-example">
-          <h3>Sample code</h3>
-          <pre>
-            <span class="code-line"><span class="highlight-a">&lt;ul&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;li&gt;</span>
-              Ex 1
-              <span class="highlight-a">&lt;/li&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;li&gt;</span>
-              Ex 2
-              <span class="highlight-a">&lt;/li&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;li&gt;</span>
-              Ex 3
-              <span class="highlight-a">&lt;/li&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/ul&gt;</span></span>
-            <span class="code-line"><span class="highlight-a">&lt;ol&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;li&gt;</span>
-              Ex 1
-              <span class="highlight-a">&lt;/li&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;li&gt;</span>
-              Ex 2
-              <span class="highlight-a">&lt;/li&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;li&gt;</span>
-              Ex 3
-              <span class="highlight-a">&lt;/li&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/ol&gt;</span></span>
-          </pre>
-        </div>
-        <div class="section double-padded">
-          <h3>Customization</h3>
-          <ul>
-            <li>Text color can be changed globally by changing the value of the <code>--</code> variable.</li>
-          </ul>
-        </div>
-      </div>
-      <br/>
-      <div id="grid" class="card fluid">
-        <h2 class="section double-padded">Grid</h2>
-        <div class="section">
-          <p>
-            The grid system of
-          </p>
-        </div>
-        <div class="section">
-          <h3>Example</h3>
-          <div class="container" style="padding: 0.25rem">
-            <div class="row">
-              <div class="col-sm-1">
-                <div class="box-colored">
-                  1
-                </div>
-              </div>
-              <div class="col-sm-11">
-                <div class="box-colored">
-                  11
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-2">
-                <div class="box-colored">
-                  2
-                </div>
-              </div>
-              <div class="col-sm-10">
-                <div class="box-colored">
-                  10
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-3">
-                <div class="box-colored">
-                  3
-                </div>
-              </div>
-              <div class="col-sm-9">
-                <div class="box-colored">
-                  9
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-4">
-                <div class="box-colored">
-                  4
-                </div>
-              </div>
-              <div class="col-sm-8">
-                <div class="box-colored">
-                  8
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-5">
-                <div class="box-colored">
-                  5
-                </div>
-              </div>
-              <div class="col-sm-7">
-                <div class="box-colored">
-                  7
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-6">
-                <div class="box-colored">
-                  6
-                </div>
-              </div>
-              <div class="col-sm-6">
-                <div class="box-colored">
-                  6
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm-12">
-                <div class="box-colored">
-                  12
-                </div>
-              </div>
-            </div>
-            <div class="row">
-              <div class="col-sm">
-                <div class="box-colored">
-                  fluid
-                </div>
-              </div>
-              <div class="col-sm">
-                <div class="box-colored">
-                  fluid
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="section double-padded prefiller-example">
-          <h3>Sample code</h3>
-          <pre>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;container&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-1&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-11&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-2&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-10&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-3&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-9&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-4&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-8&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-5&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-7&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-6&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-6&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm-12&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;row&quot;</span>
-              <span class="highlight-a">&gt;</span>
-            </span>
-            <span class="code-line">
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-              <span class="highlight-a">&lt;div</span>
-              <span class="highlight-b">class</span>
-              =
-              <span class="highlight-c">&quot;col-sm&quot;</span>
-              <span class="highlight-a">&gt;</span>
-              <span class="highlight-a">&lt;/div&gt;</span>
-            </span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-          </pre>
-        </div>
-          <div class="section double-padded prefiller-example">
-            <h3>Modifiers</h3>
-            <h4>Screen sizes and width</h4>
-            <p>
-              Each column class is defined by specifying a screen size (small -
-              <code>
-                sm
-              </code>
-              , medium -
-              <code>
-                md
-              </code>
-               or large -
-              <code>
-                lg
-              </code>
-              ) and a column width (a value between
-              <code>
-                1
-              </code>
-               and
-              <code>
-                12
-              </code>
-               or you can omit it for a fluid column), separated by dashes (e.g.
-              <code>
-                .col-sm-6
-              </code>
-               for a 6-wide column on a small screen). Using these you can apply different layouts for different screen sizes, by altering the width of columns, using multiple classes. Note that column widths are applied recursively, meaning that if you do not specify a width for a specific screen size the column will use the width applied for the previous largest screen size.
-            </p>
-            <h5>
-              Example
-            </h5>
-            <div class="container" style="padding: 0.25rem">
-              <div class="row">
-                <div class="col-sm-12 col-md">
-                  <div class="row">
-                    <div class="col-sm">
-                      <h6 style="text-align:center">
-                        Small screen layout
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">
-                        sm-12
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-12">
-                      <div class="box-colored" style="height: 3.75rem">
-                        sm-12 md-8
-                      </div>
-                    </div>
-                    <div class="col-sm-12">
-                      <div class="box-colored" style="height: 2rem">
-                        sm-12 md-4
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">
-                        sm-12
-                      </div>
-                    </div>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md">
-                  <div class="row">
-                    <div class="col-sm">
-                      <h6 style="text-align:center">
-                        Medium/Large screen layout
-                      </h6>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">
-                        sm-12
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm-8">
-                      <div class="box-colored" style="height: 8rem">
-                        sm-12 md-8
-                      </div>
-                    </div>
-                    <div class="col-sm-4">
-                      <div class="box-colored" style="height: 8rem">
-                        sm-12 md-4
-                      </div>
-                    </div>
-                  </div>
-                  <div class="row">
-                    <div class="col-sm">
-                      <div class="box-colored">
-                        sm-12
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <br/>
+/*Couleur de fond*/
+--bgColor: #ffffff;
 
-        <div id="cards" class="card fluid">
-          <h2 class="section double-padded">Cards</h2>
-          <div class="section">
-            <p>
-              Cards should be used with
-              <a href="#grid">grid system</a>
-            </p>
-          </div>
-          <div class="section">
-            <h3>Example</h3>
-            <div class="container" style="padding: 0.25rem">
-              <div class="row">
-                <div class="card">
-                  <div class="section">
-                    <h3 class="doc">Card 1</h3>
-                    <p class="doc">
-                      card.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="section">
-                    <h3 class="doc">Card 2</h3>
-                    <p class="doc">
-                      This is another card with some sample content.
-                    </p>
-                  </div>
-                </div>
-                <div class="card">
-                  <div class="section">
-                    <h3 class="doc">Card 3</h3>
-                    <p class="doc">
-                      This is one more card with some sample content.
-                    </p>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="section double-padded prefiller-example">
-            <h3>Sample code</h3>
-            <pre>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;row&quot;</span>
-                <span class="highlight-a">&gt;</span>
-              </span>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;card&quot;</span>
-                <span class="highlight-a">&gt;&lt;/div&gt;</span>
-              </span>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;card&quot;</span>
-                <span class="highlight-a">&gt;&lt;/div&gt;</span>
-              </span>
-              <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            </pre>
-          </div>
-          <div class="section double-padded prefiller-example">
-            <h3>Other sizes</h3>
-            <p>
-              You can create small (
-              <code>
-                .small
-              </code>
-              ,
-              <code>
-                240px
-              </code>
-               wide) or large (
-              <code>
-                .large
-              </code>
-              ,
-              <code>
-                480px
-              </code>
-               wide). You can also create fluid (
-              <code>
-                .fluid
-              </code>
-              ) cards.
-            </p>
-            <h5>
-              Example
-            </h5>
-            <div class="container" style="padding: 0.25rem">
-              <div class="row">
-                <div class="card small">
-                  <div class="section">
-                    <h3 class="doc">Small Card</h3>
-                    <p class="doc">
-                      Small cards are
-                      <code>
-                        240px
-                      </code>
-                       wide.
-                    </p>
-                  </div>
-                </div>
-                <div class="card large">
-                  <div class="section">
-                    <h3 class="doc">Large Card</h3>
-                    <p class="doc">
-                      Large cards are
-                      <code>
-                        480px
-                      </code>
-                       wide.
-                    </p>
-                  </div>
-                </div>
-                <div class="col-sm-12 col-md-10 col-lg-8">
-                  <div class="card fluid" style="margin: 0.5rem 0.25rem;">
-                    <div class="section">
-                      <h3 class="doc">Fluid Card</h3>
-                      <p class="doc">
-                        Fluid cards scale their width based on the column that contains them.
-                      </p>
+/*Gris*/
+--neutralColor: #747681;
+--neutralColorLighter: #d2d6dd;
+--neutralColorDarker: #3f4144;
+--errorColor: #d43939;
+--successColor: #28bd14;
+
+
+/*Bleu violet*/
+--primaryColor_1: #FDFCFE;
+--primaryColor_2: #FBFAFF;
+--primaryColor_3: #F5F2FF;
+--primaryColor_4: #EDE9FE;
+--primaryColor_5: #E4DEFC;
+--primaryColor_6: #D7CFF9;
+
+--primaryColor_7: #C4B8F3;
+--primaryColorLighter: #C4B8F3;
+
+--primaryColor_8: #A291E0;
+--primaryColor_9: #6E56CF;
+
+--primaryColor_10: #5745A8;
+--primaryColor: #5745A8;
+
+--primaryColor_11: #3E327D;
+
+--primaryColor_12: #20134B;
+--primaryColorDarker: #20134B;
+
+
+/*Violet*/
+--secondaryColor_1: #FEFCFE;
+--secondaryColor_2: #FDFAFF;
+--secondaryColor_3: #F9F1FE;
+--secondaryColor_4: #F3E7FC;
+--secondaryColor_5: #EDDBF9;
+--secondaryColor_6: #E3CCF4;
+
+--secondaryColor_7: #D3B4ED;
+--secondaryColorLighter: #D3B4ED;
+
+--secondaryColor_8: #B28AD6;
+--secondaryColor_9: #7C44AD;
+
+--secondaryColor_10: #61338A;
+--secondaryColor: #61338A;
+
+--secondaryColor_11: #452163;
+
+--secondaryColor_12: #2B0E44;
+--secondaryColorDarker: #2B0E44;
+
+
+/*Couleur de font*/
+--fontColor: #333333;
+</code></pre>
+          </article>
+
+          <article class="mtx2 ptx2" id="variables__other">
+              <header>
+                  <h3>Other Variables</h3>
+              </header>
+
+              <pre><code>/*ÉTALON DE MESURE*/
+--baseUnit: 16px;
+
+
+/*GRILLE*/
+--grid-maxWidth: 120rem;
+--grid-gutter: 2rem;
+
+
+/*FONT*/
+--fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
+
+--fontFamilyMono: monaco, "Consolas", "Lucida Console", monospace;
+}
+
+</code></pre>
+</section>
+            <section class="mtx4 ptx4" id="text">
+                <header>
+                    <h2>Text</h2>
+                </header>
+
+                <article id="text__headings">
+                    <header>
+                        <h3>Headings</h3>
+                    </header>
+                    <div>
+                        <h1>Heading 1</h1>
+                        <h2>Heading 2</h2>
+                        <h3>Heading 3</h3>
+                        <h4>Heading 4</h4>
+                        <h5>Heading 5</h5>
+                        <h6>Heading 6</h6>
                     </div>
-                  </div>
+
+<!--
+                    <pre><code>&lt;div&gt;
+      &lt;h1&gt;Heading 1&lt;/h1&gt;
+      &lt;h2&gt;Heading 2&lt;/h2&gt;
+      &lt;h3&gt;Heading 3&lt;/h3&gt;
+      &lt;h4&gt;Heading 4&lt;/h4&gt;
+      &lt;h5&gt;Heading 5&lt;/h5&gt;
+      &lt;h6&gt;Heading 6&lt;/h6&gt;
+&lt;/div&gt; </code></pre>
+-->
+
+                    <pre><code>/*Titres*/
+  h1,
+  .h1,
+  h2,
+  .h2,
+  h3,
+  .h3,
+  h4,
+  .h4,
+  h5,
+  .h5,
+  h6,
+  .h6 {
+      font-weight: 500;
+      margin: 0.35em 0 0.7em 0;
+  }
+
+  h1,
+  .h1 {
+      font-size: calc(var(--baseUnit) * 2.5);
+      font-size: 2em;
+  }
+
+  h2,
+  .h2 {
+      font-size: calc(var(--baseUnit) * 2);
+      font-size: 1.75em;
+  }
+
+  h3,
+  .h3 {
+      font-size: calc(var(--baseUnit) * 1.75);
+      font-size: 1.50em;
+  }
+
+  h4,
+  .h4 {
+      font-size: calc(var(--baseUnit) * 1.5);
+      font-size: 1.25em;
+  }
+
+  h5,
+  .h5 {
+      font-size: calc(var(--baseUnit) * 1.2);
+      font-size: 1em;
+  }
+
+  h6,
+  .h6 {
+      font-size: calc(var(--baseUnit) * 0.8);
+      font-size: 0.9em;
+  } </code></pre>
+
+                </article>
+                <article id="text__paragraphs">
+                    <header>
+                        <h3>Paragraphs</h3>
+                    </header>
+                    <div>
+                        <p>
+                            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                        </p>
+                    </div>
+
+<!--
+                    <pre><code>&lt;p>
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p> </code></pre>
+-->
+
+                    <pre><code>/*Paragraphes*/
+
+p,
+.p {
+    font-size: 1rem;
+    font-weight: 100;
+    line-height: 1.25rem;
+}</pre></code>
+                </article>
+
+                <article id="text__blockquotes">
+                    <header>
+                        <h3>Blockquotes</h3>
+                    </header>
+                    <div>
+                        <blockquote>
+                            <p>
+                                A block quotation. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+                            </p>
+                            <cite><a href="">Author</a></cite>
+                        </blockquote>
+                    </div>
+
+<!--
+                    <pre><code>&lt;blockquote>
+&lt;p>
+A block quotation. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+&lt;/p>
+&lt;cite> &lt;a href="">Author &lt;/a> &lt;/cite>
+&lt;/blockquote></code></pre>
+-->
+
+                    <pre><code>/*Bloc de citations*/
+
+quote,
+.quote {
+    margin: 2vw;
+}
+
+blockquote,
+.blockquote {
+    margin: 1rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    background-color: aliceblue;
+}
+
+blockquote p::before,
+.blockquote p::before {
+    content: '\201C';
+}
+
+blockquote p::after,
+.blockquote p::after {
+    content: '\201D';
+}
+</code></pre>
+                </article>
+
+                <article id="text__lists">
+                    <header>
+                        <h3>Lists</h3>
+                    </header>
+                    <div>
+                        <h3>Definition list</h3>
+                        <dl>
+                            <dt>Definition List Title</dt>
+                            <dd>This is a definition list division.</dd>
+                        </dl>
+                        <h3>Ordered List</h3>
+                        <ol>
+                            <li>List Item 1</li>
+                            <li>List Item 2</li>
+                            <li>List Item 3</li>
+                        </ol>
+                        <h3>Unordered List</h3>
+                        <ul>
+                            <li>List Item 1</li>
+                            <li>List Item 2</li>
+                            <li>List Item 3</li>
+                        </ul>
+                    </div>
+
+                    <pre><code>dl dt {
+font-weight: bold;
+}</pre></code>
+
+                </article>
+                <article id="text__tables">
+                    <header>
+                        <h3>Tabular data</h3>
+                    </header>
+                    <table>
+                        <caption>
+                            Table Caption
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Table Heading 1</th>
+                                <th>Table Heading 2</th>
+                                <th>Table Heading 3</th>
+                                <th>Table Heading 4</th>
+                                <th>Table Heading 5</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Table Footer 1</th>
+                                <th>Table Footer 2</th>
+                                <th>Table Footer 3</th>
+                                <th>Table Footer 4</th>
+                                <th>Table Footer 5</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Table Cell 1</td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                                <td>Table Cell 4</td>
+                                <td>Table Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Table Cell 1</td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                                <td>Table Cell 4</td>
+                                <td>Table Cell 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <br />
+                    <h4>
+                        Table with strips. Just add the <code>striped</code> class to
+                        <code>&lt;table&gt;</code>.
+                    </h4>
+                    <table class="striped">
+                        <caption>
+                            Table Caption
+                        </caption>
+                        <thead>
+                            <tr>
+                                <th>Table Heading 1</th>
+                                <th>Table Heading 2</th>
+                                <th>Table Heading 3</th>
+                                <th>Table Heading 4</th>
+                                <th>Table Heading 5</th>
+                            </tr>
+                        </thead>
+                        <tfoot>
+                            <tr>
+                                <th>Table Footer 1</th>
+                                <th>Table Footer 2</th>
+                                <th>Table Footer 3</th>
+                                <th>Table Footer 4</th>
+                                <th>Table Footer 5</th>
+                            </tr>
+                        </tfoot>
+                        <tbody>
+                            <tr>
+                                <td>Table Cell 1</td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                                <td>Table Cell 4</td>
+                                <td>Table Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Table Cell 1</td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                                <td>Table Cell 4</td>
+                                <td>Table Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Table Cell 1</td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                                <td>Table Cell 4</td>
+                                <td>Table Cell 5</td>
+                            </tr>
+                            <tr>
+                                <td>Table Cell 1</td>
+                                <td>Table Cell 2</td>
+                                <td>Table Cell 3</td>
+                                <td>Table Cell 4</td>
+                                <td>Table Cell 5</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <pre><code>table {
+border: none;
+border-collapse: collapse;
+border-spacing: 0;
+text-align: left;
+}
+
+table.striped tr:nth-of-type(2n) {
+background-color: var(--secondaryColor_3);
+}</code></pre>
+                </article>
+                <article id="text__inline">
+                    <header>
+                        <h3>Inline elements</h3>
+                    </header>
+                    <div>
+                        <p><a href="#!">This is a text link</a>.</p>
+                        <p>
+                            <strong>Strong.</strong>
+                        </p>
+                        <p><em>This is Emphasis.</em></p>
+                        <p>
+                            The <b>b element</b> e.
+                        </p>
+                        <p>
+                            The <i>i element</i>.
+                        </p>
+                        <p>
+                            The <u>u element</u>.
+                        </p>
+                        <p>
+                            <del>Deleted</del> and
+                            <ins>Inserted</ins>.
+                        </p>
+                        <p><s>Strikethrough</s>.</p>
+                        <p>Superscript<sup>®</sup>.</p>
+                        <p>Subscript: H<sub>2</sub>O.</p>
+                        <p>
+                            <small>Small text.</small>
+                        </p>
+                        <p>
+                            Abbreviation:
+                            <abbr title="HyperText Markup Language">HTML</abbr>
+                        </p>
+                        <p><cite>This is a citation.</cite></p>
+                        <p>The <dfn>dfn element</dfn>.</p>
+                        <p>The <mark>mark element</mark>.</p>
+                        <p>
+                            The <var>variable element</var>.
+                        </p>
+                    </div>
+                    <pre><code>
+figcaption,
+.figcaption {
+margin: 1rem 1rem 1rem 2.5rem;
+}
+
+figcaption p,
+.figcaption p {
+color: var(--primaryColor);
+}
+
+figcaption cite,
+.figcaption cite {
+font-style: italic;
+}
+                    </code></pre>
+                </article>
+            </section>
+
+            <section class="mtx4 ptx4" id="embedded">
+                <header>
+                    <h2>Embedded content</h2>
+                </header>
+                <article id="embedded__images">
+                    <header>
+                        <h2>Images</h2>
+                    </header>
+                    <div>
+                        <h3>No <code>&lt;figure&gt;</code> element</h3>
+                        <p>
+                            <img src="http://unsplash.it/480/480" alt="Image alt text" />
+                        </p>
+                        <h3>
+                            Wrapped in a <code>&lt;figure&gt;</code> element, no
+                            <code>&lt;figcaption&gt;</code>
+                        </h3>
+                        <figure>
+                            <img src="http://unsplash.it/420/420" alt="Image alt text" />
+                        </figure>
+                        <h3>
+                            Wrapped in a <code>&lt;figure&gt;</code> element, with a
+                            <code>&lt;figcaption&gt;</code>
+                        </h3>
+                        <figure>
+                            <img src="http://unsplash.it/420/420" alt="Image alt text" />
+                            <figcaption>Here is a caption for this image.</figcaption>
+                        </figure>
+                    </div>
+                </article>
+                <article id="embedded__audio">
+                    <header>
+                        <h2>Audio</h2>
+                    </header>
+                    <div><audio controls="">audio</audio></div>
+                </article>
+                <article id="embedded__video">
+                    <header>
+                        <h2>Video</h2>
+                    </header>
+                    <div><video controls="">video</video></div>
+                </article>
+                <section class="mtx2 ptx2" id="forms">
+                    <header>
+                        <h2>Form elements</h2>
+                    </header>
+                    <form>
+                        <fieldset id="forms__input">
+                            <legend>Input fields</legend>
+                            <p>
+                                <label for="input__text">Text Input</label>
+                                <input id="input__text" type="text" placeholder="Text Input" />
+                            </p>
+                            <p>
+                                <label for="input__password">Password</label>
+                                <input id="input__password" type="password" placeholder="Type your Password" />
+                            </p>
+                            <p>
+                                <label for="input__webaddress">Web Address</label>
+                                <input id="input__webaddress" type="url" placeholder="http://yoursite.com" />
+                            </p>
+                            <p>
+                                <label for="input__emailaddress">Email Address</label>
+                                <input id="input__emailaddress" type="email" placeholder="name@email.com" />
+                            </p>
+                            <p>
+                                <label for="input__phone">Phone Number</label>
+                                <input id="input__phone" type="tel" placeholder="(999) 999-9999" />
+                            </p>
+                            <p>
+                                <label for="input__search">Search</label>
+                                <input id="input__search" type="search" placeholder="Enter Search Term" />
+                            </p>
+                            <p>
+                                <label for="input__text2">Number Input</label>
+                                <input id="input__text2" type="number" placeholder="Enter a Number" />
+                            </p>
+                            <p>
+                                <label for="input__text3" class="error">Error</label>
+                                <input id="input__text3" class="error" type="text" placeholder="Text Input" />
+                            </p>
+                            <p>
+                                <label for="input__text4" class="success">Valid</label>
+                                <input id="input__text4" class="success" type="text" placeholder="Text Input" />
+                            </p>
+                            <p>
+                                <label for="input__text5">Disabled Text Input</label>
+                                <input id="input__text5" type="text" placeholder="Disabled Text Input" disabled />
+                            </p>
+                            <p class="grouped">
+                                <input type="search" name="input__text6" id="input__text6" placeholder="Search" />
+                                <button class="button icon-only">
+                                    <img src="https://icongr.am/feather/search.svg?size=16" />
+                                </button>
+                            </p>
+                            <p class="grouped">
+                                <input type="text" name="input__text7" id="input__text7" placeholder="Username" />
+                                <input type="text" name="input__text8" id="input__text8" placeholder="Password" />
+                                <button class="primary--button">Submit</button>
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__select">
+                            <legend>Select menus</legend>
+                            <p>
+                                <label for="select">Select</label>
+                                <select id="select">
+                                    <optgroup label="Option Group">
+                                        <option>Option One</option>
+                                        <option>Option Two</option>
+                                        <option>Option Three</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__checkbox">
+                            <legend>Checkboxes</legend>
+                            <ul class="list ">
+                                <li>
+                                    <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
+                                        Choice A</label>
+                                </li>
+                                <li>
+                                    <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" />
+                                        Choice B</label>
+                                </li>
+                                <li>
+                                    <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" />
+                                        Choice C</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="forms__radio">
+                            <legend>Radio buttons</legend>
+                            <ul class="list list--bare">
+                                <li>
+                                    <label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked" />
+                                        Option 1</label>
+                                </li>
+                                <li>
+                                    <label for="radio2"><input id="radio2" name="radio" type="radio" class="radio" />
+                                        Option 2</label>
+                                </li>
+                                <li>
+                                    <label for="radio3"><input id="radio3" name="radio" type="radio" class="radio" />
+                                        Option 3</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="forms__textareas">
+                            <legend>Textareas</legend>
+                            <p>
+                                <label for="textarea">Textarea</label>
+                                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__html5">
+                            <legend>HTML5 inputs</legend>
+                            <p>
+                                <label for="ic">Color input</label>
+                                <input type="color" id="ic" value="#000000" />
+                            </p>
+                            <p>
+                                <label for="in">Number input</label>
+                                <input type="number" id="in" min="0" max="10" value="5" />
+                            </p>
+                            <p>
+                                <label for="ir">Range input</label>
+                                <input type="range" id="ir" value="10" />
+                            </p>
+                            <p>
+                                <label for="idd">Date input</label>
+                                <input type="date" id="idd" value="1970-01-01" />
+                            </p>
+                            <p>
+                                <label for="idm">Month input</label>
+                                <input type="month" id="idm" value="1970-01" />
+                            </p>
+                            <p>
+                                <label for="idw">Week input</label>
+                                <input type="week" id="idw" value="1970-W01" />
+                            </p>
+                            <p>
+                                <label for="idt">Datetime input</label>
+                                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
+                            </p>
+                            <p>
+                                <label for="idtl">Datetime-local input</label>
+                                <input type="datetime-local" id="idtl" value="1970-01-01T00:00" />
+                            </p>
+                        </fieldset>
+                        <pre><code>
+fieldset {
+padding: 0.5rem 2rem;
+}
+
+legend {
+text-transform: uppercase;
+font-size: 0.8em;
+letter-spacing: 0.1rem;
+}
+
+.list {
+list-style-type: none;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+select,
+textarea,
+textarea[type="text"] {
+font-family: inherit;
+padding: 0.8rem 1rem;
+border-radius: 4px;
+border: 1px solid var(--neutralColorLighter);
+font-size: 1em;
+transition: all 0.2s ease;
+display: block;
+width: 80%;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):not(:disabled):hover,
+select:hover,
+textarea:hover,
+textarea[type="text"]:hover {
+border-color: var(--neutralColor);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):focus,
+select:focus,
+textarea:focus,
+textarea[type="text"]:focus {
+outline: none;
+border-color: var(--primaryColor);
+box-shadow: 0 0 1px var(--primaryColor);
+}
+
+input.error:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+textarea.error {
+border-color: var(--errorColor);
+}
+
+input.success:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+textarea.success {
+border-color: var(--successColor);
+}
+
+select {
+background: #f3f3f6 no-repeat 100%;
+background-size: 1ex;
+background-origin: content-box;
+background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='40' fill='%23555'><polygon points='0,0 60,0 30,40'/></svg>");
+}
+
+[type="checkbox"],
+[type="radio"] {
+width: 1.6rem;
+height: 1.6rem;
+}
+</pre></code>
+                        <fieldset class="mtx2 ptx2" id="forms__action">
+                            <legend>Action buttons</legend>
+                            <p class="mt">
+                                <input class="primary--button" type="submit" value="Input Submit" />
+                                <input class="secondary--button" type="button" value="Input Button" />
+                                <input class="third--button" type="reset" value="Input Reset" />
+                                <input class="primary--button" type="submit" value="Input Disabled" disabled />
+                            </p>
+                            <p class="mt">
+                                <button class="primary--button" type="submit">Button Submit</button>
+                                <button class="primary--button" type="button">Button Button</button>
+                                <button class="primary--button" type="reset">Button reset</button>
+                                <button class="primary--button" type="button" disabled>Button Disabled</button>
+                            </p>
+                            <p class="mt">
+                                <a href="#" class="button primary">Link Primary Button</a>
+                                <a href="#" class="button secondary">Link Secondary Button</a>
+                                <a href="#" class="button dark">Link Dark Button</a>
+                                <a href="#" class="button error">Link Error Button</a>
+                                <a href="#" class="button success mt">Link Success Button</a>
+                            </p>
+                            <p class="mt">
+                                <a href="#" class="button outline">Link outline button</a>
+                                <a href="#" class="button outline primary">Link Primary Outline</a>
+                                <a href="#" class="button outline secondary">Link Secondary Outline</a>
+                                <a href="#" class="button clear">Link Clear Button</a>
+                            </p>
+                        </fieldset>
+                    </form>
+                    <pre><code>
+                      /*
+                      a {
+                          text-decoration: none;
+                          color: rgba(var(--neutralColor), 1);
+                          font-size: var(--baseUnit);
+                      }
+
+                      a:hover {
+                          background-color: rgba(var(--neutralColor), .75);
+                          color: white;
+                      }
+                      */
+
+                      a {
+                          text-decoration: none;
+                          font-weight: 500;
+                      }
+
+
+
+                      .primary--link {
+                          color: rgba(var(--primaryColor), 1);
+                      }
+
+                      .primary--link:hover {
+                          background-color: rgba(var(--primaryColor), .75);
+                      }
+
+                      .big--link {
+                          font-size: calc(var(--baseUnit) * 1.25);
+                      }
+
+                      .small--link {
+                          font-size: calc(var(--baseUnit) * .75);
+                      }
+
+
+
+
+
+                      button {
+                          margin: 0.5rem;
+                          padding: .75rem 1rem .75rem 1rem;
+                          border: none;
+                          border-radius: 5rem;
+                      }
+
+
+
+                      .primary--button {
+                          color: rgba(255, 255, 255, 1);
+                          background-color: var(--primaryColor);
+                      }
+
+                      .primary--button a {
+                          color: rgba(255, 255, 255, 1);
+                      }
+
+
+                      .primary--button:hover {
+                          color: rgba(255, 255, 255, 1);
+                          background-color: var(--primaryColorDarker);
+                      }
+
+                      .primary--button:hover a {
+                          color: rgba(255, 255, 255, 1);
+                      }
+
+
+
+
+                      .secondary--button {
+                          color: var(--primaryColor);
+                          background-color: var(--secondaryColorLighter);
+                      }
+
+                      .secondary--button a {
+                          color: var(--primaryColor);
+                      }
+
+
+                      .secondary--button:hover {
+                          color: var(--primaryColor_1);
+                          background-color: var(--primaryColor);
+                      }
+
+                      .secondary--button:hover a {
+                          color: rgba(255, 255, 255, 1);
+                      }
+
+
+
+                      .third--button {
+                          color: var(--primaryColor);
+                          background-color: var(--color-lightGrey);
+                          border: 2px solid var(--primaryColor);
+                      }
+
+                      .third--button a {
+                          color: var(--primaryColor);
+                      }
+
+
+                      .third--button:hover {
+                          color: var(--primaryColor);
+                          border: 2px solid var(--primaryColor);
+                      }
+
+                      third--button:hover a {
+                          color: var(--primaryColor);
+                      }
+
+
+
+
+
+                      .big--button {}
+
+                      .medium--button {
+                          margin: 0.5rem;
+                          padding: .55rem .85rem .55rem .85rem;
+                          border-radius: 5rem;
+                      }
+
+
+                      .small--button {
+                          font-size: .75rem;
+                          margin: 0.5rem;
+                          padding: .4rem .7rem .4rem .7rem;
+                          border-radius: 5rem;
+                      }
+
+                      /* BUTTONS */
+                      .button,
+                      [type="button"],
+                      [type="reset"],
+                      [type="submit"],
+                      button {
+                          padding: 1rem 2.5rem;
+                          color: var(--neutralColorDarker);
+                          background-color: var(--neutralColorLighter);
+                          border-radius: 4px;
+                          border: 1px solid transparent;
+                          font-size: var(--font-size);
+                          line-height: 1;
+                          text-align: center;
+                          transition: opacity 0.2s ease;
+                          text-decoration: none;
+                          transform: scale(1);
+                          display: inline-block;
+                          cursor: pointer;
+                      }
+
+                      .grouped {
+                          display: flex;
+                      }
+
+                      .grouped > *:not(:last-child) {
+                          margin-right: 16px;
+                      }
+
+
+
+                      .button + .button {
+                          margin-left: 1rem;
+                      }
+
+                      .button:hover,
+                      [type="button"]:hover,
+                      [type="reset"]:hover,
+                      [type="submit"]:hover,
+                      button:hover {
+                          opacity: 0.8;
+                          color: var(--neutralColorLighter);
+                          background-color: var(--neutralColorDarker);
+                      }
+
+                      .button:active,
+                      [type="button"]:active,
+                      [type="reset"]:active,
+                      [type="submit"]:active,
+                      button:active {
+                          transform: scale(0.98);
+                      }
+
+                      input:disabled,
+                      button:disabled,
+                      input:disabled:hover,
+                      button:disabled:hover {
+                          opacity: 0.4;
+                          cursor: not-allowed;
+                      }
+
+                      .button.primary,
+                      .button.secondary,
+                      .button.dark,
+                      .button.error,
+                      .button.success,
+                      [type="submit"] {
+                          color: var(--neutralColorLighter);
+                          z-index: 1;
+                          /* hightlight from other button's border when grouped */
+                          background-color: var(--primaryColor);
+                      }
+
+                      .button.secondary {
+                          background-color: var(--neutralColor);
+                      }
+
+                      .button.dark {
+                          background-color: var(--neutralColorDarker);
+                      }
+
+                      .button.error {
+                          background-color: var(--errorColor);
+                      }
+
+                      .button.success {
+                          background-color: var(--successColor);
+                      }
+
+                      .button.outline {
+                          background-color: transparent;
+                          border-color: var(--neutralColorLighter);
+                      }
+
+                      .button.outline.primary {
+                          border-color: var(--primaryColor);
+                          color: var(--primaryColor);
+                      }
+
+                      .button.outline.secondary {
+                          border-color: var(--neutralColor);
+                          color: var(--neutralColor);
+                      }
+
+                      .button.outline.dark {
+                          border-color: var(--neutralColorDarker);
+                          color: var(--neutralColorDarker);
+                      }
+
+                      .button.clear {
+                          background-color: transparent;
+                          border-color: transparent;
+                          color: var(--primaryColor);
+                      }
+
+                      .button.icon {
+                          display: inline-flex;
+                          align-items: center;
+                      }
+
+                      .button.icon > img {
+                          margin-left: 2px;
+                      }
+
+                      .button.icon-only {
+                          padding: 1rem;
+                      }
+
+                      ::placeholder {
+                          color: var(--neutralColor);
+                      }
+
+
+                      /* Crédit : Baptiste */
+</pre></code>
+                </section>
+                <section class="mtx4 ptx4" id="components">
+                  <header>
+                      <h2>Components</h2>
+                  </header>
+                <h3 id="components__nav">Nav</h3>
+
+                <div class="clearfix"></div>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="nav-left">
+                            <a class="brand" href="#">Logo</a>
+                        </div>
+                        <div class="nav-center">
+                            <a class="button outline" href="#">Centered</a>
+                        </div>
+                        <div class="nav-right">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#" class="active">Link 3</a>
+                        </div>
+                    </div>
+                </nav>
+                <br />
+                <hr />
+                <br />
+
+                <nav class="nav">
+                    <div class="nav-left">
+                        <a class="brand" href="#">Logo</a>
+                    </div>
+                    <div class="nav-center">
+                        <a href="#">Centered</a>
+                    </div>
+                    <div class="nav-right">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </nav>
+                <div>
+                    <section class="mtx2 ptx2">
+                        <br />
+                        <hr />
+                        <br />
+                        <nav class="nav">
+                            <div class="nav-center">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#" class="active">Link 3</a>
+                                <a href="#" class="button primary">Button</a>
+                            </div>
+                        </nav>
+                        <br />
+                        <hr />
+                        <br />
+                        <nav class="nav">
+                            <div class="nav-left">
+                                <a class="brand" href="#">
+                                    <img src="" alt="" />
+                                    Logo</a>
+                            </div>
+                            <div class="nav-right">
+                                <div class="tabs">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#" class="active">Link 3</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <br />
+                        <hr />
+                        <br />
+                        <nav class="nav">
+                            <div class="nav-left">
+                                <a class="brand" href="#">
+                                    <img src="" alt="" />Logo
+                                </a>
+                                <div class="tabs">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <br />
+                        <hr />
+                        <br />
+                        <nav role="navigation" class="nav">
+                            <a class="brand" href="#">
+                                <img src="" alt="" />Logo</a>
+                            <ul class="nav-right">
+                                <li class="dropdown-menu">
+                                    <a href="#">Link 1</a>
+                                    <ul class="dropdown-menu-element">
+                                        <li><a href="#">Under Link 1</a></li>
+                                        <li><a href="#">Under Link 2</a></li>
+                                        <li><a href="#">Under Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu">
+                                    <a href="#">Link 2</a>
+                                    <ul class="dropdown-menu-element">
+                                        <li><a href="#">Under Link 1</a></li>
+                                        <li><a href="#">Under Link 2</a></li>
+                                        <li><a href="#">Under Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu">
+                                    <a href="#">Link 3</a>
+                                    <ul class="dropdown-menu-element">
+                                        <li><a href="#">Under Link 1</a></li>
+                                        <li><a href="#">Under Link 2</a></li>
+                                        <li><a href="#">Under Link 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                        <pre><code>.nav {
+                          display: flex;
+                          min-height: 5rem;
+                          align-items: stretch;
+                      }
+
+                      .nav img {
+                          max-height: 3rem;
+                      }
+
+                      .nav > .container {
+                          display: flex;
+                      }
+
+                      .nav-center,
+                      .nav-left,
+                      .nav-right {
+                          display: flex;
+                          flex: 1;
+                      }
+
+                      .nav-left {
+                          justify-content: flex-start;
+                      }
+
+                      .nav-right {
+                          justify-content: flex-end;
+                      }
+
+                      .nav-center {
+                          justify-content: center;
+                      }
+
+                      @media screen and (max-width: 480px) {
+
+                          .nav,
+                          .nav > .container {
+                              flex-direction: column;
+                          }
+
+                          .nav-center,
+                          .nav-left,
+                          .nav-right {
+                              flex-wrap: wrap;
+                              /*        justify-content: center;*/
+                          }
+
+                          .nav-right {
+                              justify-content: flex-start;
+                          }
+                      }
+
+                      .nav a,
+                      .nav .brand {
+                          text-decoration: none;
+                          display: flex;
+                          align-items: center;
+                          padding: 1rem 2rem;
+                          color: var(--neutralColorDarker);
+                      }
+
+                      .nav [aria-current="page"]:not(.button),
+                      .nav .active:not(.button) {
+                          color: #000;
+                          /* fallback */
+                          color: var(--primaryColor);
+                      }
+
+                      .nav .brand {
+                          font-size: 1.75em;
+                          padding-top: 0;
+                          padding-bottom: 0;
+                      }
+
+                      .nav .brand img {
+                          padding-right: 1rem;
+                      }
+
+                      .nav .button {
+                          margin: auto 1rem;
+                      }
+
+                      .fixed-header {
+                          position: fixed;
+                          background: var(--color-lightGrey)
+                      }
+
+                      .fixed-header {
+                          position: fixed;
+                      }
+
+                      .dropdown-menu > a:after {
+                          content: '❯';
+                          font-size: 15px;
+                          margin-left: 7px;
+                          display: inline-block;
+                      }
+
+                      .dropdown-menu-element {
+                          margin-top: var(--baseUnit) / 2;
+                          text-align: left;
+                          background-color: white;
+                          overflow: hidden;
+                          max-height: 0;
+                          list-style-type: none;
+                          position: absolute;
+                          display: block;
+                          padding: 10px;
+                          border-radius: 15px;
+                      }
+
+                      .dropdown-menu-element > li > a {
+                          height: calc(var(--baseUnit) * 3);
+                          padding-left: calc(var(--baseUnit) * 1.25);
+                          align-items: center;
+                          display: flex;
+                          padding: 0 25px 0 10px;
+                      }
+
+                      .nav > ul {
+                          list-style-type: none;
+                      }
+
+                      nav > ul > li:hover > a {
+                          color: var(--secondaryColor);
+                      }
+
+                      .dropdown-menu-element > li:hover {
+                          background-color: rgba(33, 105, 236, 0.3);
+                      }
+
+                      .dropdown-menu-element > li:hover > a {
+                          color: var(--color-lightGrey);
+                      }
+
+                      @keyframes rotationArrow {
+                          0% {
+                              transform: rotate(0deg);
+                          }
+
+                          100% {
+                              transform: rotate(90deg);
+                          }
+                      }
+
+                      .dropdown-menu:hover > a:after {
+                          animation: rotationArrow 0.2s linear forwards;
+                      }
+
+                      @keyframes appearDropdownMenu {
+                          0% {
+                              box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+                              border-top: 3px solid var(--secondaryColor);
+                          }
+
+                          30% {
+                              box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+                          }
+
+                          100% {
+                              max-height: 50em;
+                              border-top: 3px solid var(--secondaryColor);
+                              box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+                          }
+                      }
+
+                      .dropdown-menu:hover > .dropdown-menu-element {
+                          animation: appearDropdownMenu 1s forwards;
+                      }
+
+                      id {
+                          overflow-y: scroll;
+                          scroll-behavior: smooth;
+                      }
+</pre></code>
+                        <h2 id="components__tabs">Tabs</h2>
+                        <div class="tabs">
+                            <a class="active" href="#">Tab 1</a>
+                            <a href="#">Tab 2</a>
+                            <a href="#">Tab 3</a>
+                        </div>
+                        <br />
+                        <hr />
+                        <br />
+                        <div class="tabs is-full">
+                            <a class="active" href="#">Tab 1</a>
+                            <a href="#">Tab 2</a>
+                            <a href="#">Tab 3</a>
+                        </div>
+                        <pre><code>.tabs {
+                            display: flex;
+                        }
+
+                        .tabs a {
+                            text-decoration: none;
+                        }
+
+                        .tabs > .dropdown > summary,
+                        .tabs > a {
+                            padding: 1rem 2rem;
+                            flex: 0 1 auto;
+                            color: var(--neutralColorDarker);
+                            border-bottom: 2px solid var(--neutralColorLighter);
+                            text-align: center;
+                        }
+
+                        .tabs > a[aria-current="page"],
+                        .tabs > a.active,
+                        .tabs > a:hover {
+                            opacity: 1;
+                            border-bottom: 2px solid var(--neutralColorDarker);
+                        }
+
+                        .tabs > a[aria-current="page"],
+                        .tabs > a.active {
+                            border-color: var(--primaryColor);
+                        }
+
+                        .tabs.is-full a {
+                            flex: 1 1 auto;
+                        }
+
+                        </pre></code>
+                    </section>
+                    <section class="mtx2 ptx2">
+                        <h2 id="components__card">Card</h2>
+                        <div class="row is-center">
+                            <div class="col-4">
+                                <div class="card">
+                                    <header>
+                                        <h4>Card title</h4>
+                                    </header>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                        enim ad minim veniam, quis nostrud exercit.
+                                    </p>
+                                    <footer class="is-right">
+                                        <a href="#" class="button primary">Submit</a>
+                                        <a href="#" class="button">Cancel</a>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                        enim ad minim veniam, quis nostrud exercit.
+                                    </p>
+                                    <p>
+                                        Ipsa magnam consequatur itaque, mollitia non quam voluptate
+                                        consequuntur dignissimos recusandae ea quas, nobis, debitis
+                                        officia iure minus et dolore, reprehenderit sapiente iste.
+                                        Eligendi eveniet ut qui at, deleniti enim!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <pre><code>.card {
+                            padding: var(--baseUnit) calc(var(--baseUnit) * 2);
+                            border-radius: 4px;
+                            background: var(--bgColor);
+                            box-shadow: 0 2px 8px var(--neutralColorLighter);
+                        }
+
+                        .card p:last-child {
+                            margin: 0;
+                        }
+
+                        .card header > * {
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                        }
+</pre></code>
+                    </section>
+                        <h2 id="components__grid">Grid</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card is-center">.col-2</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card is-center">.col-2</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card is-center">.col-2</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card is-center">.col-4</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card is-center">.col-4</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card is-center">.col-4</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="card is-center">.col-5</div>
+                            </div>
+                            <div class="col-5">
+                                <div class="card is-center">.col-5</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card is-center">.col-6</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card is-center">.col-6</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="card is-center">.col-7</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="card is-center">.col-8</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="card is-center">.col-9</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="card is-center">.col-10</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="card is-center">.col-11</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card is-center">.col-12</div>
+                            </div>
+                        </div>
+                        <h4>Responsive grids:</h4>
+                        <div class="row">
+                            <div class="col-12 col-6-md col-4-lg">
+                                <div class="card is-center">.col-12.col-6-md.col-4-lg</div>
+                            </div>
+                            <div class="col-6 col-3-md col-4-lg">
+                                <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
+                            </div>
+                            <div class="col-6 col-3-md col-4-lg">
+                                <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-6-lg">
+                                <div class="card is-center">.col.col-6-lg</div>
+                            </div>
+                            <div class="col col-3-lg">
+                                <div class="card is-center">.col.col-3-lg</div>
+                            </div>
+                            <div class="col col-3-lg">
+                                <div class="card is-center">.col.col-3-lg</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col hide-sm">
+                                <div class="card is-center">.hide-sm</div>
+                            </div>
+                            <div class="col hide-md">
+                                <div class="card is-center">.hide-md</div>
+                            </div>
+                            <div class="col hide-lg">
+                                <div class="card is-center">.hide-lg</div>
+                            </div>
+                        </div>
                 </div>
-              </div>
-            </div>
-            <h5>
-              Sample code
-            </h5>
-            <pre>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;row&quot;</span>
-                <span class="highlight-a">&gt;</span>
-              </span>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;card small&quot;</span>
-                <span class="highlight-a">&gt;&lt;/div&gt;</span>
-              </span>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;card large&quot;</span>
-                <span class="highlight-a">&gt;&lt;/div&gt;</span>
-              </span>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;col-sm-12&quot;</span>
-                <span class="highlight-a">&gt;</span>
-              </span>
-              <span class="code-line">
-                <span class="highlight-a">&lt;div</span>
-                <span class="highlight-b">class</span>
-                =
-                <span class="highlight-c">&quot;card fluid&quot;</span>
-                <span class="highlight-a">&gt;&lt;/div&gt;</span>
-              </span>
-              <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-              <span class="code-line"><span class="highlight-a">&lt;/div&gt;</span></span>
-            </pre>
-            <br/>
->>>>>>> main
+                <pre><code>.container {
+                    max-width: var(--grid-maxWidth);
+                    margin: 0 auto;
+                    width: 90%;
+                    max-width: 1220px;
+                    padding: 0 calc(var(--grid-gutter) / 2);
+                }
+
+
+                @media screen and (min-width: 0px) {
+
+                    .container {
+                        width: 86%;
+                    }
+
+                }
+
+                .row {
+                    display: flex;
+                    /*    flex-flow: row wrap;*/
+                    justify-content: flex-start;
+                    margin-left: calc(var(--grid-gutter) / -2);
+                    margin-right: calc(var(--grid-gutter) / -2);
+                }
+
+                .row.reverse {
+                    flex-direction: row-reverse;
+                }
+
+                article {
+                    margin: 4rem 0;
+                }
+
+                .col {
+                    flex: 1;
+                }
+
+                .col,
+                [class*=" col-"],
+                [class^='col-'] {
+                    margin: 0 calc(var(--grid-gutter) / 2.5) calc(var(--grid-gutter) / 2.5);
+                }
+
+                .col-1 {
+                    flex: 0 0 calc((100% / (12/1)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/1)) - var(--grid-gutter));
+                }
+
+                .col-2 {
+                    flex: 0 0 calc((100% / (12/2)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/2)) - var(--grid-gutter));
+                }
+
+                .col-3 {
+                    flex: 0 0 calc((100% / (12/3)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/3)) - var(--grid-gutter));
+                }
+
+                .col-4 {
+                    flex: 0 0 calc((100% / (12/4)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/4)) - var(--grid-gutter));
+                }
+
+                .col-5 {
+                    flex: 0 0 calc((100% / (12/5)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/5)) - var(--grid-gutter));
+                }
+
+                .col-6 {
+                    flex: 0 0 calc((100% / (12/6)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/6)) - var(--grid-gutter));
+                }
+
+                .col-7 {
+                    flex: 0 0 calc((100% / (12/7)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/7)) - var(--grid-gutter));
+                }
+
+                .col-8 {
+                    flex: 0 0 calc((100% / (12/8)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/8)) - var(--grid-gutter));
+                }
+
+                .col-9 {
+                    flex: 0 0 calc((100% / (12/9)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/9)) - var(--grid-gutter));
+                }
+
+                .col-10 {
+                    flex: 0 0 calc((100% / (12/10)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/10)) - var(--grid-gutter));
+                }
+
+                .col-11 {
+                    flex: 0 0 calc((100% / (12/11)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/11)) - var(--grid-gutter));
+                }
+
+                .col-12 {
+                    flex: 0 0 calc((100% / (12/12)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/12)) - var(--grid-gutter));
+                }
+
+                /*
+                @media screen and (min-width: 480px) {
+
+                    .col,
+                    [class*="col-"],
+                    [class^='col-'] {
+                        flex: 0 1 100%;
+                        max-width: 100%;
+                    }
+                }
+                */
+
+                @media screen and (min-width: 900px) {
+                    .col-1-md {
+                        flex: 0 0 calc((100% / (12/1)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/1)) - var(--grid-gutter));
+                    }
+
+                    .col-2-md {
+                        flex: 0 0 calc((100% / (12/2)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/2)) - var(--grid-gutter));
+                    }
+
+                    .col-3-md {
+                        flex: 0 0 calc((100% / (12/3)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/3)) - var(--grid-gutter));
+                    }
+
+                    .col-4-md {
+                        flex: 0 0 calc((100% / (12/4)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/4)) - var(--grid-gutter));
+                    }
+
+                    .col-5-md {
+                        flex: 0 0 calc((100% / (12/5)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/5)) - var(--grid-gutter));
+                    }
+
+                    .col-6-md {
+                        flex: 0 0 calc((100% / (12/6)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/6)) - var(--grid-gutter));
+                    }
+
+                    .col-7-md {
+                        flex: 0 0 calc((100% / (12/7)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/7)) - var(--grid-gutter));
+                    }
+
+                    .col-8-md {
+                        flex: 0 0 calc((100% / (12/8)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/8)) - var(--grid-gutter));
+                    }
+
+                    .col-9-md {
+                        flex: 0 0 calc((100% / (12/9)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/9)) - var(--grid-gutter));
+                    }
+
+                    .col-10-md {
+                        flex: 0 0 calc((100% / (12/10)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/10)) - var(--grid-gutter));
+                    }
+
+                    .col-11-md {
+                        flex: 0 0 calc((100% / (12/11)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/11)) - var(--grid-gutter));
+                    }
+
+                    .col-12-md {
+                        flex: 0 0 calc((100% / (12/12)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/12)) - var(--grid-gutter));
+                    }
+                }
+
+                @media screen and (min-width: 1200px) {
+                    .col-1-lg {
+                        flex: 0 0 calc((100% / (12/1)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/1)) - var(--grid-gutter));
+                    }
+
+                    .col-2-lg {
+                        flex: 0 0 calc((100% / (12/2)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/2)) - var(--grid-gutter));
+                    }
+
+                    .col-3-lg {
+                        flex: 0 0 calc((100% / (12/3)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/3)) - var(--grid-gutter));
+                    }
+
+                    .col-4-lg {
+                        flex: 0 0 calc((100% / (12/4)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/4)) - var(--grid-gutter));
+                    }
+
+                    .col-5-lg {
+                        flex: 0 0 calc((100% / (12/5)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/5)) - var(--grid-gutter));
+                    }
+
+                    .col-6-lg {
+                        flex: 0 0 calc((100% / (12/6)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/6)) - var(--grid-gutter));
+                    }
+
+                    .col-7-lg {
+                        flex: 0 0 calc((100% / (12/7)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/7)) - var(--grid-gutter));
+                    }
+
+                    .col-8-lg {
+                        flex: 0 0 calc((100% / (12/8)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/8)) - var(--grid-gutter));
+                    }
+
+                    .col-9-lg {
+                        flex: 0 0 calc((100% / (12/9)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/9)) - var(--grid-gutter));
+                    }
+
+                    .col-10-lg {
+                        flex: 0 0 calc((100% / (12/10)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/10)) - var(--grid-gutter));
+                    }
+
+                    .col-11-lg {
+                        flex: 0 0 calc((100% / (12/11)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/11)) - var(--grid-gutter));
+                    }
+
+                    .col-12-lg {
+                        flex: 0 0 calc((100% / (12/12)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/12)) - var(--grid-gutter));
+                    }
+                }</pre></code>
+            </section>
+        </main>
+    </div>
 </body>
+
 </html>
+
+
+<!--made by Baptiste L., Blanche B. & Bryan V.-->
