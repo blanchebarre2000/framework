@@ -374,7 +374,7 @@ figcaption,
 
 figcaption p,
 .figcaption p {
-    color: #808080;
+    color: var(--primaryColor);
 }
 
 figcaption cite,

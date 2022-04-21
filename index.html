@@ -17,7 +17,12 @@
                 <h1 class="nav-left">Framework CSS</h1>
             </header>
             <ul class="nav-right">
-              <li><a href="#color">Color</a></li>
+              <li class="dropdown-menu">
+                  <a href="#variables">Variables</a>
+                  <ul class="dropdown-menu-element">
+                      <li><a href="#variables__color">Color</a></li>
+                      <li><a href="#variables__other">Paragraphs</a></li>
+                  </ul>
                 <li class="dropdown-menu">
                     <a href="#text">Text</a>
                     <ul class="dropdown-menu-element">
@@ -69,10 +74,13 @@
         <main class="mtx2" role="main">
 
 
-<section class="mtx4 ptx4" id="color">
-          <article id="Color">
+<section class="mtx4 ptx4" id="variables">
+          <header>
+              <h2>Variables</h2>
+          </header>
+          <article class="mtx2 ptx2" id="variables__color">
               <header>
-                  <h2>Colors</h2>
+                  <h3>Colors</h3>
               </header>
               <div>
                   <img src="styles/IMG/Purple.png">
@@ -143,6 +151,28 @@
 </code></pre>
           </article>
 
+          <article class="mtx2 ptx2" id="variables__other">
+              <header>
+                  <h3>Other Variables</h3>
+              </header>
+
+              <pre><code>/*ÉTALON DE MESURE*/
+--baseUnit: 16px;
+
+
+/*GRILLE*/
+--grid-maxWidth: 120rem;
+--grid-gutter: 2rem;
+
+
+/*FONT*/
+--fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
+
+--fontFamilyMono: monaco, "Consolas", "Lucida Console", monospace;
+}
+
+</code></pre>
+</section>
             <section class="mtx4 ptx4" id="text">
                 <header>
                     <h2>Text</h2>
@@ -324,6 +354,11 @@ blockquote p::after,
                             <li>List Item 3</li>
                         </ul>
                     </div>
+
+                    <pre><code>dl dt {
+font-weight: bold;
+}</pre></code>
+
                 </article>
                 <article id="text__tables">
                     <header>
@@ -426,6 +461,16 @@ blockquote p::after,
                             </tr>
                         </tbody>
                     </table>
+                    <pre><code>table {
+border: none;
+border-collapse: collapse;
+border-spacing: 0;
+text-align: left;
+}
+
+table.striped tr:nth-of-type(2n) {
+background-color: var(--secondaryColor_3);
+}</code></pre>
                 </article>
                 <article id="text__inline">
                     <header>
@@ -471,6 +516,22 @@ blockquote p::after,
                             <var>y</var>.
                         </p>
                     </div>
+                    <pre><code>
+figcaption,
+.figcaption {
+margin: 1rem 1rem 1rem 2.5rem;
+}
+
+figcaption p,
+.figcaption p {
+color: var(--primaryColor);
+}
+
+figcaption cite,
+.figcaption cite {
+font-style: italic;
+}
+                    </code></pre>
                 </article>
             </section>
 
@@ -664,7 +725,75 @@ blockquote p::after,
                                 <input type="datetime-local" id="idtl" value="1970-01-01T00:00" />
                             </p>
                         </fieldset>
-                        <fieldset id="forms__action">
+                        <pre><code>
+fieldset {
+padding: 0.5rem 2rem;
+}
+
+legend {
+text-transform: uppercase;
+font-size: 0.8em;
+letter-spacing: 0.1rem;
+}
+
+.list {
+list-style-type: none;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+select,
+textarea,
+textarea[type="text"] {
+font-family: inherit;
+padding: 0.8rem 1rem;
+border-radius: 4px;
+border: 1px solid var(--neutralColorLighter);
+font-size: 1em;
+transition: all 0.2s ease;
+display: block;
+width: 80%;
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):not(:disabled):hover,
+select:hover,
+textarea:hover,
+textarea[type="text"]:hover {
+border-color: var(--neutralColor);
+}
+
+input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]):focus,
+select:focus,
+textarea:focus,
+textarea[type="text"]:focus {
+outline: none;
+border-color: var(--primaryColor);
+box-shadow: 0 0 1px var(--primaryColor);
+}
+
+input.error:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+textarea.error {
+border-color: var(--errorColor);
+}
+
+input.success:not([type="checkbox"]):not([type="radio"]):not([type="submit"]):not([type="color"]):not([type="button"]):not([type="reset"]),
+textarea.success {
+border-color: var(--successColor);
+}
+
+select {
+background: #f3f3f6 no-repeat 100%;
+background-size: 1ex;
+background-origin: content-box;
+background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='60' height='40' fill='%23555'><polygon points='0,0 60,0 30,40'/></svg>");
+}
+
+[type="checkbox"],
+[type="radio"] {
+width: 1.6rem;
+height: 1.6rem;
+}
+</pre></code>
+                        <fieldset class="mtx2 ptx2" id="forms__action">
                             <legend>Action buttons</legend>
                             <p class="mt">
                                 <input class="primary--button" type="submit" value="Input Submit" />
@@ -693,6 +822,274 @@ blockquote p::after,
                             </p>
                         </fieldset>
                     </form>
+                    <pre><code>
+                      /*
+                      a {
+                          text-decoration: none;
+                          color: rgba(var(--neutralColor), 1);
+                          font-size: var(--baseUnit);
+                      }
+
+                      a:hover {
+                          background-color: rgba(var(--neutralColor), .75);
+                          color: white;
+                      }
+                      */
+
+                      a {
+                          text-decoration: none;
+                          font-weight: 500;
+                      }
+
+
+
+                      .primary--link {
+                          color: rgba(var(--primaryColor), 1);
+                      }
+
+                      .primary--link:hover {
+                          background-color: rgba(var(--primaryColor), .75);
+                      }
+
+                      .big--link {
+                          font-size: calc(var(--baseUnit) * 1.25);
+                      }
+
+                      .small--link {
+                          font-size: calc(var(--baseUnit) * .75);
+                      }
+
+
+
+
+
+                      button {
+                          margin: 0.5rem;
+                          padding: .75rem 1rem .75rem 1rem;
+                          border: none;
+                          border-radius: 5rem;
+                      }
+
+
+
+                      .primary--button {
+                          color: rgba(255, 255, 255, 1);
+                          background-color: var(--primaryColor);
+                      }
+
+                      .primary--button a {
+                          color: rgba(255, 255, 255, 1);
+                      }
+
+
+                      .primary--button:hover {
+                          color: rgba(255, 255, 255, 1);
+                          background-color: var(--primaryColorDarker);
+                      }
+
+                      .primary--button:hover a {
+                          color: rgba(255, 255, 255, 1);
+                      }
+
+
+
+
+                      .secondary--button {
+                          color: var(--primaryColor);
+                          background-color: var(--secondaryColorLighter);
+                      }
+
+                      .secondary--button a {
+                          color: var(--primaryColor);
+                      }
+
+
+                      .secondary--button:hover {
+                          color: var(--primaryColor_1);
+                          background-color: var(--primaryColor);
+                      }
+
+                      .secondary--button:hover a {
+                          color: rgba(255, 255, 255, 1);
+                      }
+
+
+
+                      .third--button {
+                          color: var(--primaryColor);
+                          background-color: var(--color-lightGrey);
+                          border: 2px solid var(--primaryColor);
+                      }
+
+                      .third--button a {
+                          color: var(--primaryColor);
+                      }
+
+
+                      .third--button:hover {
+                          color: var(--primaryColor);
+                          border: 2px solid var(--primaryColor);
+                      }
+
+                      third--button:hover a {
+                          color: var(--primaryColor);
+                      }
+
+
+
+
+
+                      .big--button {}
+
+                      .medium--button {
+                          margin: 0.5rem;
+                          padding: .55rem .85rem .55rem .85rem;
+                          border-radius: 5rem;
+                      }
+
+
+                      .small--button {
+                          font-size: .75rem;
+                          margin: 0.5rem;
+                          padding: .4rem .7rem .4rem .7rem;
+                          border-radius: 5rem;
+                      }
+
+                      /* BUTTONS */
+                      .button,
+                      [type="button"],
+                      [type="reset"],
+                      [type="submit"],
+                      button {
+                          padding: 1rem 2.5rem;
+                          color: var(--neutralColorDarker);
+                          background-color: var(--neutralColorLighter);
+                          border-radius: 4px;
+                          border: 1px solid transparent;
+                          font-size: var(--font-size);
+                          line-height: 1;
+                          text-align: center;
+                          transition: opacity 0.2s ease;
+                          text-decoration: none;
+                          transform: scale(1);
+                          display: inline-block;
+                          cursor: pointer;
+                      }
+
+                      .grouped {
+                          display: flex;
+                      }
+
+                      .grouped > *:not(:last-child) {
+                          margin-right: 16px;
+                      }
+
+
+
+                      .button + .button {
+                          margin-left: 1rem;
+                      }
+
+                      .button:hover,
+                      [type="button"]:hover,
+                      [type="reset"]:hover,
+                      [type="submit"]:hover,
+                      button:hover {
+                          opacity: 0.8;
+                          color: var(--neutralColorLighter);
+                          background-color: var(--neutralColorDarker);
+                      }
+
+                      .button:active,
+                      [type="button"]:active,
+                      [type="reset"]:active,
+                      [type="submit"]:active,
+                      button:active {
+                          transform: scale(0.98);
+                      }
+
+                      input:disabled,
+                      button:disabled,
+                      input:disabled:hover,
+                      button:disabled:hover {
+                          opacity: 0.4;
+                          cursor: not-allowed;
+                      }
+
+                      .button.primary,
+                      .button.secondary,
+                      .button.dark,
+                      .button.error,
+                      .button.success,
+                      [type="submit"] {
+                          color: var(--neutralColorLighter);
+                          z-index: 1;
+                          /* hightlight from other button's border when grouped */
+                          background-color: var(--primaryColor);
+                      }
+
+                      .button.secondary {
+                          background-color: var(--neutralColor);
+                      }
+
+                      .button.dark {
+                          background-color: var(--neutralColorDarker);
+                      }
+
+                      .button.error {
+                          background-color: var(--errorColor);
+                      }
+
+                      .button.success {
+                          background-color: var(--successColor);
+                      }
+
+                      .button.outline {
+                          background-color: transparent;
+                          border-color: var(--neutralColorLighter);
+                      }
+
+                      .button.outline.primary {
+                          border-color: var(--primaryColor);
+                          color: var(--primaryColor);
+                      }
+
+                      .button.outline.secondary {
+                          border-color: var(--neutralColor);
+                          color: var(--neutralColor);
+                      }
+
+                      .button.outline.dark {
+                          border-color: var(--neutralColorDarker);
+                          color: var(--neutralColorDarker);
+                      }
+
+                      .button.clear {
+                          background-color: transparent;
+                          border-color: transparent;
+                          color: var(--primaryColor);
+                      }
+
+                      .button.icon {
+                          display: inline-flex;
+                          align-items: center;
+                      }
+
+                      .button.icon > img {
+                          margin-left: 2px;
+                      }
+
+                      .button.icon-only {
+                          padding: 1rem;
+                      }
+
+                      ::placeholder {
+                          color: var(--neutralColor);
+                      }
+
+
+                      /* Crédit : Baptiste */
+</pre></code>
                 </section>
                 <section class="mtx4 ptx4" id="components">
                   <header>
@@ -811,6 +1208,181 @@ blockquote p::after,
                                 </li>
                             </ul>
                         </nav>
+                        <pre><code>.nav {
+                          display: flex;
+                          min-height: 5rem;
+                          align-items: stretch;
+                      }
+
+                      .nav img {
+                          max-height: 3rem;
+                      }
+
+                      .nav > .container {
+                          display: flex;
+                      }
+
+                      .nav-center,
+                      .nav-left,
+                      .nav-right {
+                          display: flex;
+                          flex: 1;
+                      }
+
+                      .nav-left {
+                          justify-content: flex-start;
+                      }
+
+                      .nav-right {
+                          justify-content: flex-end;
+                      }
+
+                      .nav-center {
+                          justify-content: center;
+                      }
+
+                      @media screen and (max-width: 480px) {
+
+                          .nav,
+                          .nav > .container {
+                              flex-direction: column;
+                          }
+
+                          .nav-center,
+                          .nav-left,
+                          .nav-right {
+                              flex-wrap: wrap;
+                              /*        justify-content: center;*/
+                          }
+
+                          .nav-right {
+                              justify-content: flex-start;
+                          }
+                      }
+
+                      .nav a,
+                      .nav .brand {
+                          text-decoration: none;
+                          display: flex;
+                          align-items: center;
+                          padding: 1rem 2rem;
+                          color: var(--neutralColorDarker);
+                      }
+
+                      .nav [aria-current="page"]:not(.button),
+                      .nav .active:not(.button) {
+                          color: #000;
+                          /* fallback */
+                          color: var(--primaryColor);
+                      }
+
+                      .nav .brand {
+                          font-size: 1.75em;
+                          padding-top: 0;
+                          padding-bottom: 0;
+                      }
+
+                      .nav .brand img {
+                          padding-right: 1rem;
+                      }
+
+                      .nav .button {
+                          margin: auto 1rem;
+                      }
+
+                      .fixed-header {
+                          position: fixed;
+                          background: var(--color-lightGrey)
+                      }
+
+                      .fixed-header {
+                          position: fixed;
+                      }
+
+                      .dropdown-menu > a:after {
+                          content: '❯';
+                          font-size: 15px;
+                          margin-left: 7px;
+                          display: inline-block;
+                      }
+
+                      .dropdown-menu-element {
+                          margin-top: var(--baseUnit) / 2;
+                          text-align: left;
+                          background-color: white;
+                          overflow: hidden;
+                          max-height: 0;
+                          list-style-type: none;
+                          position: absolute;
+                          display: block;
+                          padding: 10px;
+                          border-radius: 15px;
+                      }
+
+                      .dropdown-menu-element > li > a {
+                          height: calc(var(--baseUnit) * 3);
+                          padding-left: calc(var(--baseUnit) * 1.25);
+                          align-items: center;
+                          display: flex;
+                          padding: 0 25px 0 10px;
+                      }
+
+                      .nav > ul {
+                          list-style-type: none;
+                      }
+
+                      nav > ul > li:hover > a {
+                          color: var(--secondaryColor);
+                      }
+
+                      .dropdown-menu-element > li:hover {
+                          background-color: rgba(33, 105, 236, 0.3);
+                      }
+
+                      .dropdown-menu-element > li:hover > a {
+                          color: var(--color-lightGrey);
+                      }
+
+                      @keyframes rotationArrow {
+                          0% {
+                              transform: rotate(0deg);
+                          }
+
+                          100% {
+                              transform: rotate(90deg);
+                          }
+                      }
+
+                      .dropdown-menu:hover > a:after {
+                          animation: rotationArrow 0.2s linear forwards;
+                      }
+
+                      @keyframes appearDropdownMenu {
+                          0% {
+                              box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0);
+                              border-top: 3px solid var(--secondaryColor);
+                          }
+
+                          30% {
+                              box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+                          }
+
+                          100% {
+                              max-height: 50em;
+                              border-top: 3px solid var(--secondaryColor);
+                              box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.3);
+                          }
+                      }
+
+                      .dropdown-menu:hover > .dropdown-menu-element {
+                          animation: appearDropdownMenu 1s forwards;
+                      }
+
+                      id {
+                          overflow-y: scroll;
+                          scroll-behavior: smooth;
+                      }
+</pre></code>
                         <h2 id="components__tabs">Tabs</h2>
                         <div class="tabs">
                             <a class="active" href="#">Tab 1</a>
@@ -825,6 +1397,40 @@ blockquote p::after,
                             <a href="#">Tab 2</a>
                             <a href="#">Tab 3</a>
                         </div>
+                        <pre><code>.tabs {
+                            display: flex;
+                        }
+
+                        .tabs a {
+                            text-decoration: none;
+                        }
+
+                        .tabs > .dropdown > summary,
+                        .tabs > a {
+                            padding: 1rem 2rem;
+                            flex: 0 1 auto;
+                            color: var(--neutralColorDarker);
+                            border-bottom: 2px solid var(--neutralColorLighter);
+                            text-align: center;
+                        }
+
+                        .tabs > a[aria-current="page"],
+                        .tabs > a.active,
+                        .tabs > a:hover {
+                            opacity: 1;
+                            border-bottom: 2px solid var(--neutralColorDarker);
+                        }
+
+                        .tabs > a[aria-current="page"],
+                        .tabs > a.active {
+                            border-color: var(--primaryColor);
+                        }
+
+                        .tabs.is-full a {
+                            flex: 1 1 auto;
+                        }
+
+                        </pre></code>
                     </section>
                     <section class="mtx2 ptx2">
                         <h2 id="components__card">Card</h2>
@@ -861,6 +1467,22 @@ blockquote p::after,
                                 </div>
                             </div>
                         </div>
+                        <pre><code>.card {
+                            padding: var(--baseUnit) calc(var(--baseUnit) * 2);
+                            border-radius: 4px;
+                            background: var(--bgColor);
+                            box-shadow: 0 2px 8px var(--neutralColorLighter);
+                        }
+
+                        .card p:last-child {
+                            margin: 0;
+                        }
+
+                        .card header > * {
+                            margin-top: 0;
+                            margin-bottom: 1rem;
+                        }
+</pre></code>
                     </section>
                         <h2 id="components__grid">Grid</h2>
                         <div class="row">
@@ -1064,6 +1686,244 @@ blockquote p::after,
                             </div>
                         </div>
                 </div>
+                <pre><code>.container {
+                    max-width: var(--grid-maxWidth);
+                    margin: 0 auto;
+                    width: 90%;
+                    max-width: 1220px;
+                    padding: 0 calc(var(--grid-gutter) / 2);
+                }
+
+
+                @media screen and (min-width: 0px) {
+
+                    .container {
+                        width: 86%;
+                    }
+
+                }
+
+                .row {
+                    display: flex;
+                    /*    flex-flow: row wrap;*/
+                    justify-content: flex-start;
+                    margin-left: calc(var(--grid-gutter) / -2);
+                    margin-right: calc(var(--grid-gutter) / -2);
+                }
+
+                .row.reverse {
+                    flex-direction: row-reverse;
+                }
+
+                article {
+                    margin: 4rem 0;
+                }
+
+                .col {
+                    flex: 1;
+                }
+
+                .col,
+                [class*=" col-"],
+                [class^='col-'] {
+                    margin: 0 calc(var(--grid-gutter) / 2.5) calc(var(--grid-gutter) / 2.5);
+                }
+
+                .col-1 {
+                    flex: 0 0 calc((100% / (12/1)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/1)) - var(--grid-gutter));
+                }
+
+                .col-2 {
+                    flex: 0 0 calc((100% / (12/2)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/2)) - var(--grid-gutter));
+                }
+
+                .col-3 {
+                    flex: 0 0 calc((100% / (12/3)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/3)) - var(--grid-gutter));
+                }
+
+                .col-4 {
+                    flex: 0 0 calc((100% / (12/4)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/4)) - var(--grid-gutter));
+                }
+
+                .col-5 {
+                    flex: 0 0 calc((100% / (12/5)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/5)) - var(--grid-gutter));
+                }
+
+                .col-6 {
+                    flex: 0 0 calc((100% / (12/6)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/6)) - var(--grid-gutter));
+                }
+
+                .col-7 {
+                    flex: 0 0 calc((100% / (12/7)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/7)) - var(--grid-gutter));
+                }
+
+                .col-8 {
+                    flex: 0 0 calc((100% / (12/8)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/8)) - var(--grid-gutter));
+                }
+
+                .col-9 {
+                    flex: 0 0 calc((100% / (12/9)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/9)) - var(--grid-gutter));
+                }
+
+                .col-10 {
+                    flex: 0 0 calc((100% / (12/10)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/10)) - var(--grid-gutter));
+                }
+
+                .col-11 {
+                    flex: 0 0 calc((100% / (12/11)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/11)) - var(--grid-gutter));
+                }
+
+                .col-12 {
+                    flex: 0 0 calc((100% / (12/12)) - var(--grid-gutter));
+                    max-width: calc((100% / (12/12)) - var(--grid-gutter));
+                }
+
+                /*
+                @media screen and (min-width: 480px) {
+
+                    .col,
+                    [class*="col-"],
+                    [class^='col-'] {
+                        flex: 0 1 100%;
+                        max-width: 100%;
+                    }
+                }
+                */
+
+                @media screen and (min-width: 900px) {
+                    .col-1-md {
+                        flex: 0 0 calc((100% / (12/1)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/1)) - var(--grid-gutter));
+                    }
+
+                    .col-2-md {
+                        flex: 0 0 calc((100% / (12/2)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/2)) - var(--grid-gutter));
+                    }
+
+                    .col-3-md {
+                        flex: 0 0 calc((100% / (12/3)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/3)) - var(--grid-gutter));
+                    }
+
+                    .col-4-md {
+                        flex: 0 0 calc((100% / (12/4)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/4)) - var(--grid-gutter));
+                    }
+
+                    .col-5-md {
+                        flex: 0 0 calc((100% / (12/5)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/5)) - var(--grid-gutter));
+                    }
+
+                    .col-6-md {
+                        flex: 0 0 calc((100% / (12/6)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/6)) - var(--grid-gutter));
+                    }
+
+                    .col-7-md {
+                        flex: 0 0 calc((100% / (12/7)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/7)) - var(--grid-gutter));
+                    }
+
+                    .col-8-md {
+                        flex: 0 0 calc((100% / (12/8)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/8)) - var(--grid-gutter));
+                    }
+
+                    .col-9-md {
+                        flex: 0 0 calc((100% / (12/9)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/9)) - var(--grid-gutter));
+                    }
+
+                    .col-10-md {
+                        flex: 0 0 calc((100% / (12/10)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/10)) - var(--grid-gutter));
+                    }
+
+                    .col-11-md {
+                        flex: 0 0 calc((100% / (12/11)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/11)) - var(--grid-gutter));
+                    }
+
+                    .col-12-md {
+                        flex: 0 0 calc((100% / (12/12)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/12)) - var(--grid-gutter));
+                    }
+                }
+
+                @media screen and (min-width: 1200px) {
+                    .col-1-lg {
+                        flex: 0 0 calc((100% / (12/1)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/1)) - var(--grid-gutter));
+                    }
+
+                    .col-2-lg {
+                        flex: 0 0 calc((100% / (12/2)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/2)) - var(--grid-gutter));
+                    }
+
+                    .col-3-lg {
+                        flex: 0 0 calc((100% / (12/3)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/3)) - var(--grid-gutter));
+                    }
+
+                    .col-4-lg {
+                        flex: 0 0 calc((100% / (12/4)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/4)) - var(--grid-gutter));
+                    }
+
+                    .col-5-lg {
+                        flex: 0 0 calc((100% / (12/5)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/5)) - var(--grid-gutter));
+                    }
+
+                    .col-6-lg {
+                        flex: 0 0 calc((100% / (12/6)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/6)) - var(--grid-gutter));
+                    }
+
+                    .col-7-lg {
+                        flex: 0 0 calc((100% / (12/7)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/7)) - var(--grid-gutter));
+                    }
+
+                    .col-8-lg {
+                        flex: 0 0 calc((100% / (12/8)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/8)) - var(--grid-gutter));
+                    }
+
+                    .col-9-lg {
+                        flex: 0 0 calc((100% / (12/9)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/9)) - var(--grid-gutter));
+                    }
+
+                    .col-10-lg {
+                        flex: 0 0 calc((100% / (12/10)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/10)) - var(--grid-gutter));
+                    }
+
+                    .col-11-lg {
+                        flex: 0 0 calc((100% / (12/11)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/11)) - var(--grid-gutter));
+                    }
+
+                    .col-12-lg {
+                        flex: 0 0 calc((100% / (12/12)) - var(--grid-gutter));
+                        max-width: calc((100% / (12/12)) - var(--grid-gutter));
+                    }
+                }</pre></code>
             </section>
         </main>
     </div>
