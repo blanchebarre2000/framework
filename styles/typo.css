@@ -155,7 +155,7 @@ html {
 
 
 
-/*Titres & Paragraphes*/
+/*Titles & Paragraph*/
 h1,
 .h1,
 h2,
@@ -175,7 +175,7 @@ p,
 
 
 
-/*Titres*/
+/*Titles*/
 h1,
 .h1,
 h2,
@@ -326,7 +326,7 @@ abbr[title] {
 }
 
 
-/*Paragraphes*/
+/*Paragraph*/
 
 p,
 .p {
@@ -341,7 +341,7 @@ p,
 
 
 
-/*Bloc de citations*/
+/*Blockquote*/
 
 quote,
 .quote {
