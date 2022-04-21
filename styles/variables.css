@@ -1,13 +1,13 @@
 :root {
 
-    /*COULEURS
+    /*Colors
     Crédit : Baptiste*/
 
-    /*Couleur de fond
+    /*Background Color
     Crédit : Baptiste*/
     --bgColor: #ffffff;
 
-    /*Gris
+    /*Grey
     Crédit : Baptiste*/
     --neutralColor: #747681;
     --neutralColorLighter: #d2d6dd;
@@ -15,7 +15,7 @@
     --errorColor: #d43939;
     --successColor: #28bd14;
 
-    /*Bleu
+    /*Blue
     Crédit : Baptiste*/
 /*
     --primaryColor: rgba(0, 135, 255, 1);
@@ -23,7 +23,7 @@
     --primaryColorDarker: rgba(0, 22, 42);
 */
 
-    /*Violet
+    /*Purple
     Crédit : Baptiste*/
 /*
     --secondaryColor: rgba(131, 0, 255);
@@ -33,7 +33,7 @@
 
 
 
-    /*Bleu violet
+    /*Purple Blue
     Crédit : Baptiste*/
     --primaryColor_1: #FDFCFE;
     --primaryColor_2: #FBFAFF;
@@ -57,7 +57,7 @@
     --primaryColorDarker: #20134B;
 
 
-    /*Violet
+    /*Purple
     Crédit : Baptiste*/
     --secondaryColor_1: #FEFCFE;
     --secondaryColor_2: #FDFAFF;
@@ -80,18 +80,18 @@
     --secondaryColor_12: #2B0E44;
     --secondaryColorDarker: #2B0E44;
 
-    /*ÉTALON DE MESURE
+    /*Unit
     Crédit : Blanche*/
     --baseUnit: 16px;
 
 
-    /*GRILLE
+    /*Grid
     Crédit : Bryan*/
     --grid-maxWidth: 120rem;
     --grid-gutter: 2rem;
 
 
-    /*FONT
+    /*Font
     Crédit : Baptiste*/
     --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
 
