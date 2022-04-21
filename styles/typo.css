@@ -239,12 +239,6 @@ button {
 }
 
 
-blockquote {
-    background-color: var(--secondaryColorLighter);
-    padding: 1.5rem 2rem;
-    border-left: 3px solid var(--neutralColorLighter);
-}
-
 dl dt {
     font-weight: bold;
 }
@@ -353,7 +347,7 @@ blockquote,
     margin: 1rem;
     padding: 1.5rem;
     border-radius: 1rem;
-    background-color: aliceblue;
+    background-color: var(--primaryColor_3);
 }
 
 blockquote p::before,
