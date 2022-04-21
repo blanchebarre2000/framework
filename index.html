@@ -9,11 +9,13 @@
 </head>
 
 <body class="mlx2">
+
     <div id="top" class="container" role="document">
+
         <nav role="navigation" class="nav">
-          <header role="banner">
-              <h1 class="nav-left">Framework CSS</h1>
-          </header>
+            <header role="banner">
+                <h1 class="nav-left">Framework CSS</h1>
+            </header>
             <ul class="nav-right">
                 <li class="dropdown-menu">
                     <a href="#text">Text</a>
@@ -27,7 +29,7 @@
                     </ul>
                 </li>
                 <li class="dropdown-menu">
-                    <a href="#embedded">Embedded content</a>
+                    <a href="#embedded">Embedded</a>
                     <ul class="dropdown-menu-element">
                         <li><a href="#embedded__images">Images</a></li>
                         <li><a href="#embedded__audio">Audio</a></li>
@@ -35,7 +37,7 @@
                     </ul>
                 </li>
                 <li class="dropdown-menu">
-                    <a href="#forms">Form elements</a>
+                    <a href="#forms">Form</a>
                     <ul class="dropdown-menu-element">
                         <li><a href="#forms__input">Input fields</a></li>
                         <li><a href="#forms__select">Select menus</a></li>
@@ -55,17 +57,96 @@
                         <li><a href="#components__grid">Grid</a></li>
                     </ul>
                 </li>
-                <li><a class="secondary--button" href="docs/FrameworkCss.zip">Download Files</a></li>
+                <li><a class="secondary--button" href="docs/FrameworkCss.zip">Download</a></li>
             </ul>
         </nav>
+
         <footer>
             <p><a href="#top" class="buttonBackTop">Back to top</a></p>
         </footer>
-        <main class="margin-top-x2"role="main">
+
+        <main class="margin-top-x2" role="main">
+
             <section class="mtx2 ptx2 " id="text">
+
                 <header>
                     <h1>Text</h1>
                 </header>
+                
+                <article id="text__blockquotes">
+                    <header>
+                        <h1>Colors</h1>
+                    </header>
+                    <div>
+                        <img src="styles/IMG/Purple.png">
+                        <img src="styles/IMG/Violet.png">
+                    </div>
+
+                    <pre><code>/*Couleurs*/
+
+    /*Couleur de fond*/
+    --bgColor: #ffffff;
+
+    /*Gris*/
+    --neutralColor: #747681;
+    --neutralColorLighter: #d2d6dd;
+    --neutralColorDarker: #3f4144;
+    --errorColor: #d43939;
+    --successColor: #28bd14;
+
+
+    /*Bleu violet*/
+    --primaryColor_1: #FDFCFE;
+    --primaryColor_2: #FBFAFF;
+    --primaryColor_3: #F5F2FF;
+    --primaryColor_4: #EDE9FE;
+    --primaryColor_5: #E4DEFC;
+    --primaryColor_6: #D7CFF9;
+
+    --primaryColor_7: #C4B8F3;
+    --primaryColorLighter: #C4B8F3;
+
+    --primaryColor_8: #A291E0;
+    --primaryColor_9: #6E56CF;
+
+    --primaryColor_10: #5745A8;
+    --primaryColor: #5745A8;
+
+    --primaryColor_11: #3E327D;
+
+    --primaryColor_12: #20134B;
+    --primaryColorDarker: #20134B;
+
+
+    /*Violet*/
+    --secondaryColor_1: #FEFCFE;
+    --secondaryColor_2: #FDFAFF;
+    --secondaryColor_3: #F9F1FE;
+    --secondaryColor_4: #F3E7FC;
+    --secondaryColor_5: #EDDBF9;
+    --secondaryColor_6: #E3CCF4;
+
+    --secondaryColor_7: #D3B4ED;
+    --secondaryColorLighter: #D3B4ED;
+
+    --secondaryColor_8: #B28AD6;
+    --secondaryColor_9: #7C44AD;
+
+    --secondaryColor_10: #61338A;
+    --secondaryColor: #61338A;
+
+    --secondaryColor_11: #452163;
+
+    --secondaryColor_12: #2B0E44;
+    --secondaryColorDarker: #2B0E44;
+
+
+    /*Couleur de font*/
+    --fontColor: #333333;
+</code></pre>
+                </article>
+                
+
                 <article id="text__headings">
                     <header>
                         <h1>Headings</h1>
@@ -79,16 +160,18 @@
                         <h6>Heading 6</h6>
                     </div>
 
-<pre><code>&lt;div&gt;
+<!--
+                    <pre><code>&lt;div&gt;
       &lt;h1&gt;Heading 1&lt;/h1&gt;
       &lt;h2&gt;Heading 2&lt;/h2&gt;
       &lt;h3&gt;Heading 3&lt;/h3&gt;
       &lt;h4&gt;Heading 4&lt;/h4&gt;
       &lt;h5&gt;Heading 5&lt;/h5&gt;
       &lt;h6&gt;Heading 6&lt;/h6&gt;
-  &lt;/div&gt; </code></pre>
+&lt;/div&gt; </code></pre>
+-->
 
-  <pre><code>/*Titres*/
+                    <pre><code>/*Titres*/
   h1,
   .h1,
   h2,
@@ -108,31 +191,37 @@
   h1,
   .h1 {
       font-size: calc(var(--baseUnit) * 2.5);
+      font-size: 2em;
   }
 
   h2,
   .h2 {
       font-size: calc(var(--baseUnit) * 2);
+      font-size: 1.75em;
   }
 
   h3,
   .h3 {
       font-size: calc(var(--baseUnit) * 1.75);
+      font-size: 1.50em;
   }
 
   h4,
   .h4 {
       font-size: calc(var(--baseUnit) * 1.5);
+      font-size: 1.25em;
   }
 
   h5,
   .h5 {
       font-size: calc(var(--baseUnit) * 1.2);
+      font-size: 1em;
   }
 
   h6,
   .h6 {
       font-size: calc(var(--baseUnit) * 0.8);
+      font-size: 0.9em;
   } </code></pre>
 
                 </article>
@@ -146,19 +235,22 @@
                         </p>
                     </div>
 
+<!--
                     <pre><code>&lt;p>
 Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 &lt;/p> </code></pre>
+-->
 
-<pre><code>/*Paragraphes*/
+                    <pre><code>/*Paragraphes*/
 
 p,
 .p {
-    font-size: var(--baseUnit);
+    font-size: 1rem;
     font-weight: 100;
-    line-height: 1.15rem;
+    line-height: 1.25rem;
 }</pre></code>
                 </article>
+                
                 <article id="text__blockquotes">
                     <header>
                         <h1>Blockquotes</h1>
@@ -168,24 +260,20 @@ p,
                             <p>
                                 A block quotation. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
                             </p>
-                            <p>
-                                Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-                            </p>
                             <cite><a href="">Author</a></cite>
                         </blockquote>
                     </div>
 
-                <pre><code>&lt;blockquote>
+<!--
+                    <pre><code>&lt;blockquote>
 &lt;p>
 A block quotation. Lorem ipsum dolor sit amet, consetetur sadipscing elitr,sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
 &lt;/p>
-&lt;p>
-Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
-&lt;/p>
 &lt;cite> &lt;a href="">Author &lt;/a> &lt;/cite>
 &lt;/blockquote></code></pre>
+-->
 
-<pre><code>/*Bloc de citations*/
+                    <pre><code>/*Bloc de citations*/
 
 quote,
 .quote {
@@ -211,6 +299,7 @@ blockquote p::after,
 }
 </code></pre>
                 </article>
+                
                 <article id="text__lists">
                     <header>
                         <h1>Lists</h1>
@@ -426,566 +515,567 @@ blockquote p::after,
                     </header>
                     <div><video controls="">video</video></div>
                 </article>
-            <section class="mtx2 ptx2" id="forms">
-                <header>
-                    <h1>Form elements</h1>
-                </header>
-                <form>
-                    <fieldset id="forms__input">
-                        <legend>Input fields</legend>
-                        <p>
-                            <label for="input__text">Text Input</label>
-                            <input id="input__text" type="text" placeholder="Text Input" />
-                        </p>
-                        <p>
-                            <label for="input__password">Password</label>
-                            <input id="input__password" type="password" placeholder="Type your Password" />
-                        </p>
-                        <p>
-                            <label for="input__webaddress">Web Address</label>
-                            <input id="input__webaddress" type="url" placeholder="http://yoursite.com" />
-                        </p>
-                        <p>
-                            <label for="input__emailaddress">Email Address</label>
-                            <input id="input__emailaddress" type="email" placeholder="name@email.com" />
-                        </p>
-                        <p>
-                            <label for="input__phone">Phone Number</label>
-                            <input id="input__phone" type="tel" placeholder="(999) 999-9999" />
-                        </p>
-                        <p>
-                            <label for="input__search">Search</label>
-                            <input id="input__search" type="search" placeholder="Enter Search Term" />
-                        </p>
-                        <p>
-                            <label for="input__text2">Number Input</label>
-                            <input id="input__text2" type="number" placeholder="Enter a Number" />
-                        </p>
-                        <p>
-                            <label for="input__text3" class="error">Error</label>
-                            <input id="input__text3" class="error" type="text" placeholder="Text Input" />
-                        </p>
-                        <p>
-                            <label for="input__text4" class="success">Valid</label>
-                            <input id="input__text4" class="success" type="text" placeholder="Text Input" />
-                        </p>
-                        <p>
-                            <label for="input__text5">Disabled Text Input</label>
-                            <input id="input__text5" type="text" placeholder="Disabled Text Input" disabled />
-                        </p>
-                        <p class="grouped">
-                            <input type="search" name="input__text6" id="input__text6" placeholder="Search" />
-                            <button class="button icon-only">
-                                <img src="https://icongr.am/feather/search.svg?size=16" />
-                            </button>
-                        </p>
-                        <p class="grouped">
-                            <input type="text" name="input__text7" id="input__text7" placeholder="Username" />
-                            <input type="text" name="input__text8" id="input__text8" placeholder="Password" />
-                            <button class="primary--button">Submit</button>
-                        </p>
-                    </fieldset>
-                    <fieldset id="forms__select">
-                        <legend>Select menus</legend>
-                        <p>
-                            <label for="select">Select</label>
-                            <select id="select">
-                                <optgroup label="Option Group">
-                                    <option>Option One</option>
-                                    <option>Option Two</option>
-                                    <option>Option Three</option>
-                                </optgroup>
-                            </select>
-                        </p>
-                    </fieldset>
-                    <fieldset id="forms__checkbox">
-                        <legend>Checkboxes</legend>
-                        <ul class="list ">
-                            <li>
-                                <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
-                                    Choice A</label>
-                            </li>
-                            <li>
-                                <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" />
-                                    Choice B</label>
-                            </li>
-                            <li>
-                                <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" />
-                                    Choice C</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset id="forms__radio">
-                        <legend>Radio buttons</legend>
-                        <ul class="list list--bare">
-                            <li>
-                                <label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked" />
-                                    Option 1</label>
-                            </li>
-                            <li>
-                                <label for="radio2"><input id="radio2" name="radio" type="radio" class="radio" />
-                                    Option 2</label>
-                            </li>
-                            <li>
-                                <label for="radio3"><input id="radio3" name="radio" type="radio" class="radio" />
-                                    Option 3</label>
-                            </li>
-                        </ul>
-                    </fieldset>
-                    <fieldset id="forms__textareas">
-                        <legend>Textareas</legend>
-                        <p>
-                            <label for="textarea">Textarea</label>
-                            <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
-                        </p>
-                    </fieldset>
-                    <fieldset id="forms__html5">
-                        <legend>HTML5 inputs</legend>
-                        <p>
-                            <label for="ic">Color input</label>
-                            <input type="color" id="ic" value="#000000" />
-                        </p>
-                        <p>
-                            <label for="in">Number input</label>
-                            <input type="number" id="in" min="0" max="10" value="5" />
-                        </p>
-                        <p>
-                            <label for="ir">Range input</label>
-                            <input type="range" id="ir" value="10" />
-                        </p>
-                        <p>
-                            <label for="idd">Date input</label>
-                            <input type="date" id="idd" value="1970-01-01" />
-                        </p>
-                        <p>
-                            <label for="idm">Month input</label>
-                            <input type="month" id="idm" value="1970-01" />
-                        </p>
-                        <p>
-                            <label for="idw">Week input</label>
-                            <input type="week" id="idw" value="1970-W01" />
-                        </p>
-                        <p>
-                            <label for="idt">Datetime input</label>
-                            <input type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
-                        </p>
-                        <p>
-                            <label for="idtl">Datetime-local input</label>
-                            <input type="datetime-local" id="idtl" value="1970-01-01T00:00" />
-                        </p>
-                    </fieldset>
-                    <fieldset id="forms__action">
-                        <legend>Action buttons</legend>
-                        <p>
-                            <input class="primary--button" type="submit" value="Input Submit" />
-                            <input class="secondary--button" type="button" value="Input Button" />
-                            <input class="third--button" type="reset" value="Input Reset" />
-                            <input class="primary--button" type="submit" value="Input Disabled" disabled />
-                        </p>
-                        <p>
-                            <button class="primary--button" type="submit">Button Submit</button>
-                            <button class="primary--button" type="button">Button Button</button>
-                            <button class="primary--button" type="reset">Button reset</button>
-                            <button class="primary--button" type="button" disabled>Button Disabled</button>
-                        </p>
-                        <p>
-                            <a href="#" class="button primary">Link Primary Button</a>
-                            <a href="#" class="button secondary">Link Secondary Button</a>
-                            <a href="#" class="button dark">Link Dark Button</a>
-                            <a href="#" class="button error">Link Error Button</a>
-                            <a href="#" class="button success">Link Success Button</a>
-                        </p>
-                        <p>
-                            <a href="#" class="button outline">a.button.outline</a>
-                            <a href="#" class="button outline primary">a.button.outline.primary</a>
-                            <a href="#" class="button outline secondary">a.button.outline.secondary</a>
-                            <a href="#" class="button outline dark">a.button.outline.dark</a>
-                            <a href="#" class="button clear">a.button.clear</a>
-                        </p>
-                    </fieldset>
-                </form>
-            </section>
-    <h1 id="components__nav">Nav</h1>
+                <section class="mtx2 ptx2" id="forms">
+                    <header>
+                        <h1>Form elements</h1>
+                    </header>
+                    <form>
+                        <fieldset id="forms__input">
+                            <legend>Input fields</legend>
+                            <p>
+                                <label for="input__text">Text Input</label>
+                                <input id="input__text" type="text" placeholder="Text Input" />
+                            </p>
+                            <p>
+                                <label for="input__password">Password</label>
+                                <input id="input__password" type="password" placeholder="Type your Password" />
+                            </p>
+                            <p>
+                                <label for="input__webaddress">Web Address</label>
+                                <input id="input__webaddress" type="url" placeholder="http://yoursite.com" />
+                            </p>
+                            <p>
+                                <label for="input__emailaddress">Email Address</label>
+                                <input id="input__emailaddress" type="email" placeholder="name@email.com" />
+                            </p>
+                            <p>
+                                <label for="input__phone">Phone Number</label>
+                                <input id="input__phone" type="tel" placeholder="(999) 999-9999" />
+                            </p>
+                            <p>
+                                <label for="input__search">Search</label>
+                                <input id="input__search" type="search" placeholder="Enter Search Term" />
+                            </p>
+                            <p>
+                                <label for="input__text2">Number Input</label>
+                                <input id="input__text2" type="number" placeholder="Enter a Number" />
+                            </p>
+                            <p>
+                                <label for="input__text3" class="error">Error</label>
+                                <input id="input__text3" class="error" type="text" placeholder="Text Input" />
+                            </p>
+                            <p>
+                                <label for="input__text4" class="success">Valid</label>
+                                <input id="input__text4" class="success" type="text" placeholder="Text Input" />
+                            </p>
+                            <p>
+                                <label for="input__text5">Disabled Text Input</label>
+                                <input id="input__text5" type="text" placeholder="Disabled Text Input" disabled />
+                            </p>
+                            <p class="grouped">
+                                <input type="search" name="input__text6" id="input__text6" placeholder="Search" />
+                                <button class="button icon-only">
+                                    <img src="https://icongr.am/feather/search.svg?size=16" />
+                                </button>
+                            </p>
+                            <p class="grouped">
+                                <input type="text" name="input__text7" id="input__text7" placeholder="Username" />
+                                <input type="text" name="input__text8" id="input__text8" placeholder="Password" />
+                                <button class="primary--button">Submit</button>
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__select">
+                            <legend>Select menus</legend>
+                            <p>
+                                <label for="select">Select</label>
+                                <select id="select">
+                                    <optgroup label="Option Group">
+                                        <option>Option One</option>
+                                        <option>Option Two</option>
+                                        <option>Option Three</option>
+                                    </optgroup>
+                                </select>
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__checkbox">
+                            <legend>Checkboxes</legend>
+                            <ul class="list ">
+                                <li>
+                                    <label for="checkbox1"><input id="checkbox1" name="checkbox" type="checkbox" checked="checked" />
+                                        Choice A</label>
+                                </li>
+                                <li>
+                                    <label for="checkbox2"><input id="checkbox2" name="checkbox" type="checkbox" />
+                                        Choice B</label>
+                                </li>
+                                <li>
+                                    <label for="checkbox3"><input id="checkbox3" name="checkbox" type="checkbox" />
+                                        Choice C</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="forms__radio">
+                            <legend>Radio buttons</legend>
+                            <ul class="list list--bare">
+                                <li>
+                                    <label for="radio1"><input id="radio1" name="radio" type="radio" class="radio" checked="checked" />
+                                        Option 1</label>
+                                </li>
+                                <li>
+                                    <label for="radio2"><input id="radio2" name="radio" type="radio" class="radio" />
+                                        Option 2</label>
+                                </li>
+                                <li>
+                                    <label for="radio3"><input id="radio3" name="radio" type="radio" class="radio" />
+                                        Option 3</label>
+                                </li>
+                            </ul>
+                        </fieldset>
+                        <fieldset id="forms__textareas">
+                            <legend>Textareas</legend>
+                            <p>
+                                <label for="textarea">Textarea</label>
+                                <textarea id="textarea" rows="8" cols="48" placeholder="Enter your message here"></textarea>
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__html5">
+                            <legend>HTML5 inputs</legend>
+                            <p>
+                                <label for="ic">Color input</label>
+                                <input type="color" id="ic" value="#000000" />
+                            </p>
+                            <p>
+                                <label for="in">Number input</label>
+                                <input type="number" id="in" min="0" max="10" value="5" />
+                            </p>
+                            <p>
+                                <label for="ir">Range input</label>
+                                <input type="range" id="ir" value="10" />
+                            </p>
+                            <p>
+                                <label for="idd">Date input</label>
+                                <input type="date" id="idd" value="1970-01-01" />
+                            </p>
+                            <p>
+                                <label for="idm">Month input</label>
+                                <input type="month" id="idm" value="1970-01" />
+                            </p>
+                            <p>
+                                <label for="idw">Week input</label>
+                                <input type="week" id="idw" value="1970-W01" />
+                            </p>
+                            <p>
+                                <label for="idt">Datetime input</label>
+                                <input type="datetime" id="idt" value="1970-01-01T00:00:00Z" />
+                            </p>
+                            <p>
+                                <label for="idtl">Datetime-local input</label>
+                                <input type="datetime-local" id="idtl" value="1970-01-01T00:00" />
+                            </p>
+                        </fieldset>
+                        <fieldset id="forms__action">
+                            <legend>Action buttons</legend>
+                            <p>
+                                <input class="primary--button" type="submit" value="Input Submit" />
+                                <input class="secondary--button" type="button" value="Input Button" />
+                                <input class="third--button" type="reset" value="Input Reset" />
+                                <input class="primary--button" type="submit" value="Input Disabled" disabled />
+                            </p>
+                            <p>
+                                <button class="primary--button" type="submit">Button Submit</button>
+                                <button class="primary--button" type="button">Button Button</button>
+                                <button class="primary--button" type="reset">Button reset</button>
+                                <button class="primary--button" type="button" disabled>Button Disabled</button>
+                            </p>
+                            <p>
+                                <a href="#" class="button primary">Link Primary Button</a>
+                                <a href="#" class="button secondary">Link Secondary Button</a>
+                                <a href="#" class="button dark">Link Dark Button</a>
+                                <a href="#" class="button error">Link Error Button</a>
+                                <a href="#" class="button success">Link Success Button</a>
+                            </p>
+                            <p>
+                                <a href="#" class="button outline">a.button.outline</a>
+                                <a href="#" class="button outline primary">a.button.outline.primary</a>
+                                <a href="#" class="button outline secondary">a.button.outline.secondary</a>
+                                <a href="#" class="button outline dark">a.button.outline.dark</a>
+                                <a href="#" class="button clear">a.button.clear</a>
+                            </p>
+                        </fieldset>
+                    </form>
+                </section>
+                <h1 id="components__nav">Nav</h1>
 
-    <div class="clearfix"></div>
-    <nav class="nav">
-        <div class="container">
-            <div class="nav-left">
-                <a class="brand" href="#">Logo</a>
-            </div>
-            <div class="nav-center">
-                <a class="button outline" href="#">Centered</a>
-            </div>
-            <div class="nav-right">
-                <a href="#">Link 1</a>
-                <a href="#">Link 2</a>
-                <a href="#" class="active">Link 3</a>
-            </div>
-        </div>
-    </nav>
-    <br />
-    <hr />
-    <br />
-    <nav class="nav">
-        <div class="nav-left">
-            <a class="brand" href="#">Logo</a>
-        </div>
-        <div class="nav-center">
-            <a href="#">Centered</a>
-        </div>
-        <div class="nav-right">
-            <a href="#">Link 1</a>
-            <a href="#">Link 2</a>
-            <a href="#">Link 3</a>
-        </div>
-    </nav>
-    <div>
-        <section class="mtx2 ptx2">
-            <br />
-            <hr />
-            <br />
-            <nav class="nav">
-                <div class="nav-center">
-                    <a href="#">Link 1</a>
-                    <a href="#">Link 2</a>
-                    <a href="#" class="active">Link 3</a>
-                    <a href="#" class="button primary">Button</a>
-                </div>
-            </nav>
-            <br />
-            <hr />
-            <br />
-            <nav class="nav">
-                <div class="nav-left">
-                    <a class="brand" href="#">
-                        <img src="" alt="" />
-                        Logo</a>
-                </div>
-                <div class="nav-right">
-                    <div class="tabs">
-                        <a href="#">Link 1</a>
-                        <a href="#">Link 2</a>
-                        <a href="#" class="active">Link 3</a>
+                <div class="clearfix"></div>
+                <nav class="nav">
+                    <div class="container">
+                        <div class="nav-left">
+                            <a class="brand" href="#">Logo</a>
+                        </div>
+                        <div class="nav-center">
+                            <a class="button outline" href="#">Centered</a>
+                        </div>
+                        <div class="nav-right">
+                            <a href="#">Link 1</a>
+                            <a href="#">Link 2</a>
+                            <a href="#" class="active">Link 3</a>
+                        </div>
                     </div>
-                </div>
-            </nav>
-            <br />
-            <hr />
-            <br />
-            <nav class="nav">
-                <div class="nav-left">
-                    <a class="brand" href="#">
-                        <img src="" alt="" />Logo
-                    </a>
-                    <div class="tabs">
+                </nav>
+                <br />
+                <hr />
+                <br />
+                <nav class="nav">
+                    <div class="nav-left">
+                        <a class="brand" href="#">Logo</a>
+                    </div>
+                    <div class="nav-center">
+                        <a href="#">Centered</a>
+                    </div>
+                    <div class="nav-right">
                         <a href="#">Link 1</a>
                         <a href="#">Link 2</a>
                         <a href="#">Link 3</a>
                     </div>
-                </div>
-            </nav>
-            <br />
-            <hr />
-            <br />
-            <nav role="navigation" class="nav">
-              <a class="brand" href="#">
-              <img src="" alt="" />Logo</a>
-                <ul class="nav-right">
-                    <li class="dropdown-menu">
-                        <a href="#">Link 1</a>
-                        <ul class="dropdown-menu-element">
-                            <li><a href="#">Under Link 1</a></li>
-                            <li><a href="#">Under Link 2</a></li>
-                            <li><a href="#">Under Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-menu">
-                        <a href="#">Link 2</a>
-                        <ul class="dropdown-menu-element">
-                            <li><a href="#">Under Link 1</a></li>
-                            <li><a href="#">Under Link 2</a></li>
-                            <li><a href="#">Under Link 3</a></li>
-                        </ul>
-                    </li>
-                    <li class="dropdown-menu">
-                        <a href="#">Link 3</a>
-                        <ul class="dropdown-menu-element">
-                            <li><a href="#">Under Link 1</a></li>
-                            <li><a href="#">Under Link 2</a></li>
-                            <li><a href="#">Under Link 3</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </nav>
-        </section>
-        <section class="mtx2 ptx2">
-            <h2 id="components__tabs">Tabs</h2>
-            <div class="tabs">
-                <a class="active" href="#">Tab 1</a>
-                <a href="#">Tab 2</a>
-                <a href="#">Tab 3</a>
-            </div>
-            <br />
-            <hr />
-            <br />
-            <div class="tabs is-full">
-                <a class="active" href="#">Tab 1</a>
-                <a href="#">Tab 2</a>
-                <a href="#">Tab 3</a>
-            </div>
-        </section>
-        <section class="mtx2 ptx2">
-            <h2 id="components__card">Card</h2>
-            <div class="row is-center">
-                <div class="col-4">
-                    <div class="card">
-                        <header>
-                            <h4>Card title</h4>
-                        </header>
+                </nav>
+                <div>
+                    <section class="mtx2 ptx2">
+                        <br />
+                        <hr />
+                        <br />
+                        <nav class="nav">
+                            <div class="nav-center">
+                                <a href="#">Link 1</a>
+                                <a href="#">Link 2</a>
+                                <a href="#" class="active">Link 3</a>
+                                <a href="#" class="button primary">Button</a>
+                            </div>
+                        </nav>
+                        <br />
+                        <hr />
+                        <br />
+                        <nav class="nav">
+                            <div class="nav-left">
+                                <a class="brand" href="#">
+                                    <img src="" alt="" />
+                                    Logo</a>
+                            </div>
+                            <div class="nav-right">
+                                <div class="tabs">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#" class="active">Link 3</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <br />
+                        <hr />
+                        <br />
+                        <nav class="nav">
+                            <div class="nav-left">
+                                <a class="brand" href="#">
+                                    <img src="" alt="" />Logo
+                                </a>
+                                <div class="tabs">
+                                    <a href="#">Link 1</a>
+                                    <a href="#">Link 2</a>
+                                    <a href="#">Link 3</a>
+                                </div>
+                            </div>
+                        </nav>
+                        <br />
+                        <hr />
+                        <br />
+                        <nav role="navigation" class="nav">
+                            <a class="brand" href="#">
+                                <img src="" alt="" />Logo</a>
+                            <ul class="nav-right">
+                                <li class="dropdown-menu">
+                                    <a href="#">Link 1</a>
+                                    <ul class="dropdown-menu-element">
+                                        <li><a href="#">Under Link 1</a></li>
+                                        <li><a href="#">Under Link 2</a></li>
+                                        <li><a href="#">Under Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu">
+                                    <a href="#">Link 2</a>
+                                    <ul class="dropdown-menu-element">
+                                        <li><a href="#">Under Link 1</a></li>
+                                        <li><a href="#">Under Link 2</a></li>
+                                        <li><a href="#">Under Link 3</a></li>
+                                    </ul>
+                                </li>
+                                <li class="dropdown-menu">
+                                    <a href="#">Link 3</a>
+                                    <ul class="dropdown-menu-element">
+                                        <li><a href="#">Under Link 1</a></li>
+                                        <li><a href="#">Under Link 2</a></li>
+                                        <li><a href="#">Under Link 3</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+                    </section>
+                    <section class="mtx2 ptx2">
+                        <h2 id="components__tabs">Tabs</h2>
+                        <div class="tabs">
+                            <a class="active" href="#">Tab 1</a>
+                            <a href="#">Tab 2</a>
+                            <a href="#">Tab 3</a>
+                        </div>
+                        <br />
+                        <hr />
+                        <br />
+                        <div class="tabs is-full">
+                            <a class="active" href="#">Tab 1</a>
+                            <a href="#">Tab 2</a>
+                            <a href="#">Tab 3</a>
+                        </div>
+                    </section>
+                    <section class="mtx2 ptx2">
+                        <h2 id="components__card">Card</h2>
+                        <div class="row is-center">
+                            <div class="col-4">
+                                <div class="card">
+                                    <header>
+                                        <h4>Card title</h4>
+                                    </header>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                        enim ad minim veniam, quis nostrud exercit.
+                                    </p>
+                                    <footer class="is-right">
+                                        <a href="#" class="button primary">Submit</a>
+                                        <a href="#" class="button">Cancel</a>
+                                    </footer>
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card">
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+                                        eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                                        enim ad minim veniam, quis nostrud exercit.
+                                    </p>
+                                    <p>
+                                        Ipsa magnam consequatur itaque, mollitia non quam voluptate
+                                        consequuntur dignissimos recusandae ea quas, nobis, debitis
+                                        officia iure minus et dolore, reprehenderit sapiente iste.
+                                        Eligendi eveniet ut qui at, deleniti enim!
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                    <section class="mtx2 ptx2">
+                        <h1>Tag</h1>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercit.
+                            <span class="tag">One</span>
+                            <span class="tag">Two</span>
+                            <span class="tag">Three</span>
+                            <span class="tag is-small">Small</span>
+                            <span class="tag is-large">Large</span>
                         </p>
-                        <footer class="is-right">
-                            <a href="#" class="button primary">Submit</a>
-                            <a href="#" class="button">Cancel</a>
-                        </footer>
-                    </div>
+                    </section>
+                    <section class="mtx2 ptx2">
+                        <h2 id="components__grid">Grid</h2>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-2">
+                                <div class="card is-center">.col-2</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card is-center">.col-2</div>
+                            </div>
+                            <div class="col-2">
+                                <div class="card is-center">.col-2</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                            <div class="col-3">
+                                <div class="card is-center">.col-3</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-4">
+                                <div class="card is-center">.col-4</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card is-center">.col-4</div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card is-center">.col-4</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-5">
+                                <div class="card is-center">.col-5</div>
+                            </div>
+                            <div class="col-5">
+                                <div class="card is-center">.col-5</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <div class="card is-center">.col-6</div>
+                            </div>
+                            <div class="col-6">
+                                <div class="card is-center">.col-6</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-7">
+                                <div class="card is-center">.col-7</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-8">
+                                <div class="card is-center">.col-8</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-9">
+                                <div class="card is-center">.col-9</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                            <div class="col-1">
+                                <div class="card is-center">.col-1</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-10">
+                                <div class="card is-center">.col-10</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-11">
+                                <div class="card is-center">.col-11</div>
+                            </div>
+                            <div class="col">
+                                <div class="card is-center">.col</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card is-center">.col-12</div>
+                            </div>
+                        </div>
+                        <h4>Responsive grids:</h4>
+                        <div class="row">
+                            <div class="col-12 col-6-md col-4-lg">
+                                <div class="card is-center">.col-12.col-6-md.col-4-lg</div>
+                            </div>
+                            <div class="col-6 col-3-md col-4-lg">
+                                <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
+                            </div>
+                            <div class="col-6 col-3-md col-4-lg">
+                                <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col col-6-lg">
+                                <div class="card is-center">.col.col-6-lg</div>
+                            </div>
+                            <div class="col col-3-lg">
+                                <div class="card is-center">.col.col-3-lg</div>
+                            </div>
+                            <div class="col col-3-lg">
+                                <div class="card is-center">.col.col-3-lg</div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col hide-sm">
+                                <div class="card is-center">.hide-sm</div>
+                            </div>
+                            <div class="col hide-md">
+                                <div class="card is-center">.hide-md</div>
+                            </div>
+                            <div class="col hide-lg">
+                                <div class="card is-center">.hide-lg</div>
+                            </div>
+                        </div>
+                    </section>
                 </div>
-                <div class="col-6">
-                    <div class="card">
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-                            enim ad minim veniam, quis nostrud exercit.
-                        </p>
-                        <p>
-                            Ipsa magnam consequatur itaque, mollitia non quam voluptate
-                            consequuntur dignissimos recusandae ea quas, nobis, debitis
-                            officia iure minus et dolore, reprehenderit sapiente iste.
-                            Eligendi eveniet ut qui at, deleniti enim!
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section class="mtx2 ptx2">
-            <h1>Tag</h1>
-            <p>
-                <span class="tag">One</span>
-                <span class="tag">Two</span>
-                <span class="tag">Three</span>
-                <span class="tag is-small">Small</span>
-                <span class="tag is-large">Large</span>
-            </p>
-        </section>
-        <section class="mtx2 ptx2">
-            <h2 id="components__grid">Grid</h2>
-            <div class="row">
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-2">
-                    <div class="card is-center">.col-2</div>
-                </div>
-                <div class="col-2">
-                    <div class="card is-center">.col-2</div>
-                </div>
-                <div class="col-2">
-                    <div class="card is-center">.col-2</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-3">
-                    <div class="card is-center">.col-3</div>
-                </div>
-                <div class="col-3">
-                    <div class="card is-center">.col-3</div>
-                </div>
-                <div class="col-3">
-                    <div class="card is-center">.col-3</div>
-                </div>
-                <div class="col-3">
-                    <div class="card is-center">.col-3</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-4">
-                    <div class="card is-center">.col-4</div>
-                </div>
-                <div class="col-4">
-                    <div class="card is-center">.col-4</div>
-                </div>
-                <div class="col-4">
-                    <div class="card is-center">.col-4</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-5">
-                    <div class="card is-center">.col-5</div>
-                </div>
-                <div class="col-5">
-                    <div class="card is-center">.col-5</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-6">
-                    <div class="card is-center">.col-6</div>
-                </div>
-                <div class="col-6">
-                    <div class="card is-center">.col-6</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-7">
-                    <div class="card is-center">.col-7</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-8">
-                    <div class="card is-center">.col-8</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-9">
-                    <div class="card is-center">.col-9</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-                <div class="col-1">
-                    <div class="card is-center">.col-1</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-10">
-                    <div class="card is-center">.col-10</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-11">
-                    <div class="card is-center">.col-11</div>
-                </div>
-                <div class="col">
-                    <div class="card is-center">.col</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-12">
-                    <div class="card is-center">.col-12</div>
-                </div>
-            </div>
-            <h4>Responsive grids:</h4>
-            <div class="row">
-                <div class="col-12 col-6-md col-4-lg">
-                    <div class="card is-center">.col-12.col-6-md.col-4-lg</div>
-                </div>
-                <div class="col-6 col-3-md col-4-lg">
-                    <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
-                </div>
-                <div class="col-6 col-3-md col-4-lg">
-                    <div class="card is-center">.col-6.col-3-md.col-4-lg</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col col-6-lg">
-                    <div class="card is-center">.col.col-6-lg</div>
-                </div>
-                <div class="col col-3-lg">
-                    <div class="card is-center">.col.col-3-lg</div>
-                </div>
-                <div class="col col-3-lg">
-                    <div class="card is-center">.col.col-3-lg</div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col hide-sm">
-                    <div class="card is-center">.hide-sm</div>
-                </div>
-                <div class="col hide-md">
-                    <div class="card is-center">.hide-md</div>
-                </div>
-                <div class="col hide-lg">
-                    <div class="card is-center">.hide-lg</div>
-                </div>
-            </div>
-        </section>
+            </section>
+        </main>
     </div>
-  </main>
-</div>
 </body>
 
 </html>
