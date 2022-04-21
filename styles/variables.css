@@ -1,0 +1,99 @@
+:root {
+
+    /*COULEURS
+    Crédit : Baptiste*/
+
+    /*Couleur de fond
+    Crédit : Baptiste*/
+    --bgColor: #ffffff;
+
+    /*Gris
+    Crédit : Baptiste*/
+    --neutralColor: #747681;
+    --neutralColorLighter: #d2d6dd;
+    --neutralColorDarker: #3f4144;
+    --errorColor: #d43939;
+    --successColor: #28bd14;
+
+    /*Bleu
+    Crédit : Baptiste*/
+/*
+    --primaryColor: rgba(0, 135, 255, 1);
+    --primaryColorLighter: rgba(145, 202, 252);
+    --primaryColorDarker: rgba(0, 22, 42);
+*/
+
+    /*Violet
+    Crédit : Baptiste*/
+/*
+    --secondaryColor: rgba(131, 0, 255);
+    --secondaryColorLighter: rgba(194, 130, 255);
+    --secondaryColorDarker: rgba(31, 0, 59);
+*/
+
+
+
+    /*Bleu violet
+    Crédit : Baptiste*/
+    --primaryColor_1: #FDFCFE;
+    --primaryColor_2: #FBFAFF;
+    --primaryColor_3: #F5F2FF;
+    --primaryColor_4: #EDE9FE;
+    --primaryColor_5: #E4DEFC;
+    --primaryColor_6: #D7CFF9;
+
+    --primaryColor_7: #C4B8F3;
+    --primaryColorLighter: #C4B8F3;
+
+    --primaryColor_8: #A291E0;
+    --primaryColor_9: #6E56CF;
+
+    --primaryColor_10: #5745A8;
+    --primaryColor: #5745A8;
+
+    --primaryColor_11: #3E327D;
+
+    --primaryColor_12: #20134B;
+    --primaryColorDarker: #20134B;
+
+
+    /*Violet
+    Crédit : Baptiste*/
+    --secondaryColor_1: #FEFCFE;
+    --secondaryColor_2: #FDFAFF;
+    --secondaryColor_3: #F9F1FE;
+    --secondaryColor_4: #F3E7FC;
+    --secondaryColor_5: #EDDBF9;
+    --secondaryColor_6: #E3CCF4;
+
+    --secondaryColor_7: #D3B4ED;
+    --secondaryColorLighter: #D3B4ED;
+
+    --secondaryColor_8: #B28AD6;
+    --secondaryColor_9: #7C44AD;
+
+    --secondaryColor_10: #61338A;
+    --secondaryColor: #61338A;
+
+    --secondaryColor_11: #452163;
+
+    --secondaryColor_12: #2B0E44;
+    --secondaryColorDarker: #2B0E44;
+
+    /*ÉTALON DE MESURE
+    Crédit : Blanche*/
+    --baseUnit: 16px;
+
+
+    /*GRILLE
+    Crédit : Bryan*/
+    --grid-maxWidth: 120rem;
+    --grid-gutter: 2rem;
+
+
+    /*FONT
+    Crédit : Baptiste*/
+    --fontFamilySans: ITC Avant Garde Gothic Std, "Circular Std", -apple-system, "Avenir", "Avenir Next", "Segoe UI", "Roboto", "Helvetica Neue", "SF Pro Display", "Arial", sans-serif;
+
+    --fontFamilyMono: monaco, "Consolas", "Lucida Console", monospace;
+}
