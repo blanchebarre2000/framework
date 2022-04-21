@@ -1,0 +1,17 @@
+.card {
+    padding: var(--baseUnit) calc(var(--baseUnit) * 2);
+    border-radius: 4px;
+    background: var(--bgColor);
+    box-shadow: 0 2px 8px var(--neutralColorLighter);
+}
+
+.card p:last-child {
+    margin: 0;
+}
+
+.card header > * {
+    margin-top: 0;
+    margin-bottom: 1rem;
+}
+
+/* Crédit : Bryan */

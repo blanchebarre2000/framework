@@ -1,0 +1,33 @@
+html {
+    box-sizing: border-box;
+    font-size: var(--baseUnit);
+    line-height: 1.15;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: var(--bg-color);
+    line-height: 1.6;
+    font-size: var(--baseUnit);
+    color: var(--font-color);
+    font-family: var(--font-family-sans);
+    flex-wrap: nowrap;
+    margin: 0 auto;
+}
+
+img {
+    max-width: 100%;
+}
+
+.buttonBackTop {
+  position:fixed;
+  bottom: var(--baseUnit);
+  float: right;
+  right: var(--baseUnit);
+  color: var(--primaryColor_1);
+  background-color: var(--secondaryColor);
+  padding: var(--baseUnit);
+}
+
+/* Crédit : Bryan */
